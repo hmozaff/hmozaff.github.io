@@ -10,139 +10,78 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Industry Portfolio – Hamed Mozaffari</title>
+<title>Industry Experience – Hamed Mozaffari</title>
 
 <style>
-    body {
-        margin: 0;
-        font-family: "Segoe UI", sans-serif;
-        background: linear-gradient(180deg, #E5E5E5, #CFCFCF);
-        color: #1a1a1a;
-    }
-
-    /* TOP NAV */
-    .navbar {
-        background: linear-gradient(90deg, #AEB6BF, #D5D8DC);
-        padding: 18px;
-        font-size: 18px;
-        display: flex;
-        gap: 25px;
-        font-weight: 600;
-        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    }
-    .navbar a {
-        text-decoration: none;
-        color: #1B2631;
-    }
-    .navbar a:hover {
-        color: #2E86C1;
-    }
-
-    /* PAGE TITLE */
-    h1 {
-        text-align: center;
-        font-size: 36px;
-        margin-top: 45px;
-        color: #1B2631;
-        font-weight: 700;
-    }
-    .subtitle {
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 18px;
-        color: #34495E;
-    }
-
-    /* CARDS */
-    .section {
-        width: 75%;
-        margin: auto;
-        background: rgba(255,255,255,0.55);
-        padding: 24px 30px;
-        border-radius: 16px;
-        box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-        backdrop-filter: blur(10px);
-        margin-bottom: 40px;
-    }
-
-    h2 {
-        color: #2E86C1;
-        border-left: 6px solid #2E86C1;
-        padding-left: 10px;
-        font-size: 26px;
-    }
-
-    ul {
-        font-size: 17px;
-        line-height: 1.65;
-    }
-
-    .contact a {
-        color: #2E86C1;
-        text-decoration: none;
-        font-weight: bold;
-    }
+  body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+      width: 80%;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  hr {
+      margin: 20px 0;
+  }
+  .btn {
+      background: #2b4a75;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+  }
+  .btn:hover {
+      background: #4169a8;
+  }
 </style>
 </head>
 
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="Hamed_Mozaffari_CV.pdf">CV</a>
-    <a href="https://linkedin.com/in/hamed-mozaffari-ba60202b5" target="_blank">LinkedIn</a>
-</div>
+<div class="container">
 
-<h1>Industry Portfolio – Hamed Mozaffari</h1>
-<div class="subtitle">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</div>
+<h1>Industry Experience</h1>
 
-<!-- ===== Professional Summary ===== -->
-<div class="section">
-    <h2>Professional Summary</h2>
-    <p>
-        Robotics & AI engineer specializing in state estimation, robot learning, motion planning, nonlinear control,
-        ADAS perception–control integration, and intelligent autonomous systems. Experienced in building full-stack
-        robotics pipelines using ROS2, C++17/20, Python, and ML-based models for real-world autonomous driving and
-        manipulation tasks.
-    </p>
-</div>
+<!-- DOWNLOAD BUTTON -->
+<p style="text-align:center; margin-top:20px;">
+  <a href="cv_industry.pdf" download class="btn">Download Industry CV</a>
+</p>
 
-<!-- ===== Core Skills ===== -->
-<div class="section">
-    <h2>Core Technical Skills</h2>
-    <ul>
-        <li><b>ROS2:</b> Humble/Foxy, real-time systems, lifecycle nodes</li>
-        <li><b>C++17/20 & Python:</b> modern CMake, multi-threading</li>
-        <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt, smooth trajectory optimization</li>
-        <li><b>Sensor Fusion:</b> Kalman filters, nonlinear filtering, robot learning models</li>
-        <li><b>AI & ML:</b> neural networks, reinforcement learning for control</li>
-        <li><b>Simulation:</b> Gazebo, Isaac Sim, RViz, Webots</li>
-        <li><b>Manipulation:</b> IK/FK, Jacobians, dynamics, grasping</li>
-    </ul>
-</div>
+<hr>
 
-<!-- ===== Industry Projects ===== -->
-<div class="section">
-    <h2>Industry Projects</h2>
-    <ul>
-        <li>Autonomous robot navigation pipeline (mapping → planning → control → simulation → execution)</li>
-        <li>6-DOF robotic arm learning-based grasping for real-world manipulation</li>
-        <li>ADAS motion planning and delay-aware state estimation for autonomous driving</li>
-        <li>Full ROS2 integration for multi-sensor fusion (LiDAR, IMU, RGB-D)</li>
-        <li>Neural-network inverse kinematics for high-precision control</li>
-    </ul>
-</div>
+<h2>Technical Focus</h2>
+<ul>
+  <li>State estimation for autonomous robots, drones, and ADAS</li>
+  <li>Multi-sensor fusion (LiDAR + IMU + Camera)</li>
+  <li>Delay-aware EKF / UKF / CKF pipelines</li>
+  <li>MPC for safe navigation</li>
+  <li>Trajectory optimization (CHOMP, TrajOpt)</li>
+  <li>Reinforcement learning for decision making</li>
+</ul>
 
-<!-- ===== Contact ===== -->
-<div class="section contact">
-    <h2>Contact</h2>
-    <p>Email: hmozaff@siue.edu</p>
-    <p>GitHub: <a href="https://github.com/hmozaff">https://github.com/hmozaff</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/hamed-mozaffari-ba60202b5">linkedin.com/in/hamed-mozaffari</a></p>
-    <p>Website: <a href="https://hmozaff.github.io">hmozaff.github.io</a></p>
+<h2>Software & Tools</h2>
+<ul>
+  <li>Modern C++ (17/20)</li>
+  <li>Python</li>
+  <li>ROS2, Nav2, MoveIt, Isaac Sim</li>
+  <li>TensorFlow, PyTorch</li>
+</ul>
+
+<br><br>
+
 </div>
 
 </body>
