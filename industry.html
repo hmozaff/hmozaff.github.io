@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Industry Portfolio – Hamed Mozaffari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 40px 0 20px;
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            margin-top: 0;
+            padding-left: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #2c57ff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .download-btn:hover {
+            background: #1d3ccc;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Industry Portfolio – Hamed Mozaffari</h1>
+
+        <!-- Summary -->
+        <div class="card">
+            <h2>Professional Summary</h2>
+            <p>
+                Robotics & AI engineer with strong expertise in state estimation, robot learning,
+                nonlinear control, motion planning, and ADAS perception–control systems.
+                Experience developing full robotics pipelines using ROS2, C++17/20, sensor fusion,
+                and machine-learning-based models. Focused on building reliable autonomous behavior
+                under uncertainty for manipulation and autonomous driving applications.
+            </p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="card">
+            <h2>Technical Skills</h2>
+
+            <h3>Robotics & Autonomy</h3>
+            <ul>
+                <li>ROS2 (Humble/Foxy), C++17/20, real-time systems, node lifecycle design</li>
+                <li>Forward and inverse kinematics for 6-DOF manipulators</li>
+                <li>Trajectory optimization and smooth motion generation</li>
+                <li>Simulation tools: Gazebo, RViz, Isaac Sim</li>
+            </ul>
+
+            <h3>AI & Robot Learning</h3>
+            <ul>
+                <li>PyTorch, TensorFlow, neural networks</li>
+                <li>Reinforcement learning for motion control</li>
+                <li>Neural-network inverse kinematics</li>
+                <li>Pose estimation from RGB-D and camera data</li>
+                <li>Probabilistic machine learning and data-driven modeling</li>
+            </ul>
+
+            <h3>Estimation & Control</h3>
+            <ul>
+                <li>EKF, UKF, CKF, MEKF</li>
+                <li>Delay-aware filtering and multi-sensor fusion</li>
+                <li>Nonlinear observers and robust controllers</li>
+                <li>LQR, MPC, adaptive control</li>
+            </ul>
+
+            <h3>Motion Planning</h3>
+            <ul>
+                <li>Path planning: A*, RRT, RRT*, PRM</li>
+                <li>Behavior planning and collision avoidance</li>
+                <li>Minimum-jerk and polynomial trajectory generation</li>
+            </ul>
+
+            <h3>ADAS & Autonomous Driving</h3>
+            <ul>
+                <li>Fusion of LiDAR, camera, radar, and IMU</li>
+                <li>Lane detection, tracking, depth estimation</li>
+                <li>Object detection and multi-target tracking</li>
+                <li>Time-to-collision prediction, risk assessment (GTTC concept aligned)</li>
+            </ul>
+        </div>
+
+        <!-- Industry Projects -->
+        <div class="card">
+            <h2>Highlighted Industry Projects</h2>
+
+            <h3>AI-Based Inverse Kinematics for 6-DOF Manipulator</h3>
+            <ul>
+                <li>Developed a neural-network model to approximate inverse kinematics for a Trossen 6-DOF robot.</li>
+                <li>Integrated real-time inference in ROS2 for smooth and fast manipulation.</li>
+                <li>Reduced instability and improved operational consistency.</li>
+            </ul>
+
+            <h3>Reinforcement Learning Controller for Nonlinear Systems</h3>
+            <ul>
+                <li>Implemented RL agents for trajectory tracking under model uncertainty.</li>
+                <li>Compared RL vs LQR vs MPC in simulation and hardware testing.</li>
+                <li>Achieved smoother control inputs and lower tracking error.</li>
+            </ul>
+
+            <h3>Delay-Aware Multi-Sensor Fusion for Robotics & ADAS</h3>
+            <ul>
+                <li>Designed EKF/UKF/CKF pipelines compensating for asynchronous and delayed data.</li>
+                <li>Integrated IMU + LiDAR + camera for accurate pose estimation.</li>
+                <li>Improved estimation stability under noise and system latency.</li>
+            </ul>
+
+            <h3>Motion Planning for Autonomous Robots</h3>
+            <ul>
+                <li>Created a hybrid RRT* + MPC planner for global and local path planning.</li>
+                <li>Enabled smooth trajectories and safe obstacle avoidance.</li>
+                <li>Implemented real-time planning constraints in ROS2.</li>
+            </ul>
+
+            <h3>ADAS Perception–Control Pipeline</h3>
+            <ul>
+                <li>Implemented lane tracking, object detection, and TTC risk estimation.</li>
+                <li>Developed delay-aware fusion models for real-world driving conditions.</li>
+                <li>Built ADAS-ready perception modules aligned with driver modeling research.</li>
+            </ul>
+        </div>
+
+        <!-- Engineering Experience -->
+        <div class="card">
+            <h2>System Engineering & Integration</h2>
+            <ul>
+                <li>Full ROS2 package development for robotic manipulation</li>
+                <li>Sensor integration (IMU, LiDAR, RGB-D cameras)</li>
+                <li>Real-world tests on Trossen 6-DOF robot</li>
+                <li>Simulation-to-real validation using Gazebo and Isaac Sim</li>
+                <li>C++ implementation of estimation and control algorithms</li>
+            </ul>
+        </div>
+
+        <!-- Teaching & Mentoring -->
+        <div class="card">
+            <h2>Teaching & Leadership</h2>
+            <ul>
+                <li>Designed and taught Sensors & Actuators, Mechatronics, Modern Control courses</li>
+                <li>Developed Autonomous Vehicles lab for robotic education</li>
+                <li>Mentored student teams on robotic perception, SLAM, and estimation</li>
+                <li>Led development of a functional educational robot platform</li>
+            </ul>
+        </div>
+
+        <!-- Download -->
+        <div class="card">
+            <h2>Download Resume</h2>
+            <p>You can download my latest industry resume below:</p>
+            <a class="download-btn" href="resume.pdf" download>Download Resume (PDF)</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
