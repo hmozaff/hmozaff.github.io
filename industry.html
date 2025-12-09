@@ -1,201 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industry Portfolio – Hamed Mozaffari</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f5;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            color: #1a1a1a;
         }
 
-        .container {
-            width: 85%;
-            max-width: 1000px;
-            margin: auto;
-            padding-bottom: 50px;
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #ffffff;
+            padding: 12px 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
         }
 
-        h1 {
-            text-align: center;
-            padding: 40px 0 20px;
+        .navbar a {
+            text-decoration: none;
+            margin-left: 20px;
             color: #333;
+            font-weight: 600;
+            transition: 0.2s;
         }
 
+        .navbar a:hover {
+            color: #007bff;
+        }
+
+        /* PAGE WRAPPER */
+        .container {
+            max-width: 1100px;
+            margin: 120px auto 40px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #111;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: -5px;
+        }
+
+        /* INFO CARD */
         .card {
             background: white;
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            padding: 28px;
+            border-radius: 12px;
+            margin-top: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
 
-        h2 {
-            color: #444;
-            margin-bottom: 12px;
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #222;
         }
 
         ul {
-            margin-top: 0;
+            margin: 0;
             padding-left: 20px;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .icon-text i {
+            margin-right: 10px;
+            color: #007bff;
+        }
+
+        .profilepic {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #007bff;
         }
 
         .download-btn {
             display: inline-block;
-            margin-top: 12px;
-            padding: 10px 18px;
-            background: #2c57ff;
+            margin-top: 15px;
+            background: #007bff;
+            padding: 12px 22px;
             color: white;
-            border-radius: 6px;
+            font-weight: 600;
+            border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
+            transition: 0.3s;
         }
 
         .download-btn:hover {
-            background: #1d3ccc;
+            background: #005fcc;
         }
-
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-
-        <h1>Industry Portfolio – Hamed Mozaffari</h1>
-
-        <!-- Summary -->
-        <div class="card">
-            <h2>Professional Summary</h2>
-            <p>
-                Robotics & AI engineer with strong expertise in state estimation, robot learning,
-                nonlinear control, motion planning, and ADAS perception–control systems.
-                Experience developing full robotics pipelines using ROS2, C++17/20, sensor fusion,
-                and machine-learning-based models. Focused on building reliable autonomous behavior
-                under uncertainty for manipulation and autonomous driving applications.
-            </p>
-        </div>
-
-        <!-- Technical Skills -->
-        <div class="card">
-            <h2>Technical Skills</h2>
-
-            <h3>Robotics & Autonomy</h3>
-            <ul>
-                <li>ROS2 (Humble/Foxy), C++17/20, real-time systems, node lifecycle design</li>
-                <li>Forward and inverse kinematics for 6-DOF manipulators</li>
-                <li>Trajectory optimization and smooth motion generation</li>
-                <li>Simulation tools: Gazebo, RViz, Isaac Sim</li>
-            </ul>
-
-            <h3>AI & Robot Learning</h3>
-            <ul>
-                <li>PyTorch, TensorFlow, neural networks</li>
-                <li>Reinforcement learning for motion control</li>
-                <li>Neural-network inverse kinematics</li>
-                <li>Pose estimation from RGB-D and camera data</li>
-                <li>Probabilistic machine learning and data-driven modeling</li>
-            </ul>
-
-            <h3>Estimation & Control</h3>
-            <ul>
-                <li>EKF, UKF, CKF, MEKF</li>
-                <li>Delay-aware filtering and multi-sensor fusion</li>
-                <li>Nonlinear observers and robust controllers</li>
-                <li>LQR, MPC, adaptive control</li>
-            </ul>
-
-            <h3>Motion Planning</h3>
-            <ul>
-                <li>Path planning: A*, RRT, RRT*, PRM</li>
-                <li>Behavior planning and collision avoidance</li>
-                <li>Minimum-jerk and polynomial trajectory generation</li>
-            </ul>
-
-            <h3>ADAS & Autonomous Driving</h3>
-            <ul>
-                <li>Fusion of LiDAR, camera, radar, and IMU</li>
-                <li>Lane detection, tracking, depth estimation</li>
-                <li>Object detection and multi-target tracking</li>
-                <li>Time-to-collision prediction, risk assessment (GTTC concept aligned)</li>
-            </ul>
-        </div>
-
-        <!-- Industry Projects -->
-        <div class="card">
-            <h2>Highlighted Industry Projects</h2>
-
-            <h3>AI-Based Inverse Kinematics for 6-DOF Manipulator</h3>
-            <ul>
-                <li>Developed a neural-network model to approximate inverse kinematics for a Trossen 6-DOF robot.</li>
-                <li>Integrated real-time inference in ROS2 for smooth and fast manipulation.</li>
-                <li>Reduced instability and improved operational consistency.</li>
-            </ul>
-
-            <h3>Reinforcement Learning Controller for Nonlinear Systems</h3>
-            <ul>
-                <li>Implemented RL agents for trajectory tracking under model uncertainty.</li>
-                <li>Compared RL vs LQR vs MPC in simulation and hardware testing.</li>
-                <li>Achieved smoother control inputs and lower tracking error.</li>
-            </ul>
-
-            <h3>Delay-Aware Multi-Sensor Fusion for Robotics & ADAS</h3>
-            <ul>
-                <li>Designed EKF/UKF/CKF pipelines compensating for asynchronous and delayed data.</li>
-                <li>Integrated IMU + LiDAR + camera for accurate pose estimation.</li>
-                <li>Improved estimation stability under noise and system latency.</li>
-            </ul>
-
-            <h3>Motion Planning for Autonomous Robots</h3>
-            <ul>
-                <li>Created a hybrid RRT* + MPC planner for global and local path planning.</li>
-                <li>Enabled smooth trajectories and safe obstacle avoidance.</li>
-                <li>Implemented real-time planning constraints in ROS2.</li>
-            </ul>
-
-            <h3>ADAS Perception–Control Pipeline</h3>
-            <ul>
-                <li>Implemented lane tracking, object detection, and TTC risk estimation.</li>
-                <li>Developed delay-aware fusion models for real-world driving conditions.</li>
-                <li>Built ADAS-ready perception modules aligned with driver modeling research.</li>
-            </ul>
-        </div>
-
-        <!-- Engineering Experience -->
-        <div class="card">
-            <h2>System Engineering & Integration</h2>
-            <ul>
-                <li>Full ROS2 package development for robotic manipulation</li>
-                <li>Sensor integration (IMU, LiDAR, RGB-D cameras)</li>
-                <li>Real-world tests on Trossen 6-DOF robot</li>
-                <li>Simulation-to-real validation using Gazebo and Isaac Sim</li>
-                <li>C++ implementation of estimation and control algorithms</li>
-            </ul>
-        </div>
-
-        <!-- Teaching & Mentoring -->
-        <div class="card">
-            <h2>Teaching & Leadership</h2>
-            <ul>
-                <li>Designed and taught Sensors & Actuators, Mechatronics, Modern Control courses</li>
-                <li>Developed Autonomous Vehicles lab for robotic education</li>
-                <li>Mentored student teams on robotic perception, SLAM, and estimation</li>
-                <li>Led development of a functional educational robot platform</li>
-            </ul>
-        </div>
-
-        <!-- Download -->
-        <div class="card">
-            <h2>Download Resume</h2>
-            <p>You can download my latest industry resume below:</p>
-            <a class="download-btn" href="resume.pdf" download>Download Resume (PDF)</a>
-        </div>
-
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>Hamed Mozaffari</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="academic.html">Academic</a>
+        <a href="industry.html">Industry</a>
+        <a href="Hamed_Mozaffari_CV.pdf">CV</a>
     </div>
+</div>
+
+<div class="container">
+
+    <img src="https://avatars.githubusercontent.com/u/your_id" class="profilepic">
+
+    <div class="title">Industry Portfolio – Hamed Mozaffari</div>
+    <div class="subtitle">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</div>
+
+    <!-- SUMMARY -->
+    <div class="card">
+        <h2>Professional Summary</h2>
+        <p>
+            Robotics & AI engineer specializing in state estimation, robot learning, motion planning,
+            nonlinear control, ADAS perception–control integration, and intelligent autonomous systems.
+            Experienced in building full-stack robotics pipelines using ROS2, C++17/20, Python,
+            and ML-based models for real-world autonomous driving and manipulation tasks.
+        </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="card">
+        <h2>Core Technical Skills</h2>
+
+        <div class="icon-text"><i data-feather="cpu"></i> ROS2 (Humble/Foxy), real-time systems, lifecycle nodes</div>
+        <div class="icon-text"><i data-feather="code"></i> C++17/20, Python, modern CMake, multi-threading</div>
+        <div class="icon-text"><i data-feather="box"></i> Motion planning (RRT*, CHOMP, TrajOpt), smooth trajectory generation</div>
+        <div class="icon-text"><i data-feather="activity"></i> Sensor fusion, Kalman filtering, robot learning models</div>
+        <div class="icon-text"><i data-feather="cpu"></i> Neural networks, reinforcement learning for control</div>
+        <div class="icon-text"><i data-feather="layers"></i> Simulation: Gazebo, Isaac Sim, RViz, Webots</div>
+        <div class="icon-text"><i data-feather="settings"></i> Manipulation: IK/FK, Jacobians, dynamics, grasping</div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="card">
+        <h2>Featured Industry Projects</h2>
+
+        <ul>
+            <li><strong>Autonomous Robot Manipulator Pipeline:</strong> 6-DOF motion planning, IK solver, trajectory smoothing, real-time execution.</li>
+            <li><strong>ADAS Estimation Module:</strong> multi-sensor fusion using IMU–camera–LiDAR for lane prediction and vehicle localization.</li>
+            <li><strong>Robot Learning Controller:</strong> neural-network-based inverse kinematics and RL-based motion optimization.</li>
+            <li><strong>ROS2 Navigation Stack Integration:</strong> custom planners, costmap tuning, dynamic obstacle avoidance.</li>
+        </ul>
+    </div>
+
+    <!-- DOWNLOAD -->
+    <div class="card">
+        <h2>Download Industry CV</h2>
+        <a class="download-btn" href="Hamed_Mozaffari_CV.pdf">Download CV (PDF)</a>
+    </div>
+
+</div>
+
+<script>
+    feather.replace();
+</script>
 
 </body>
 </html>
