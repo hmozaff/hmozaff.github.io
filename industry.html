@@ -9,16 +9,17 @@
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #0d1117;
-        color: #c9d1d9;
+        background: #e5e7eb; /* SILVER background */
+        color: #374151;      /* dark gray for readability */
     }
 
     nav {
-        background: linear-gradient(90deg, #0057ff, #7b00ff);
+        background: linear-gradient(90deg, #2563eb, #4f46e5); /* blue → indigo */
         padding: 15px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: white;
     }
 
     nav a {
@@ -32,6 +33,7 @@
     .social-link img {
         margin-left: 15px;
         cursor: pointer;
+        filter: invert(100%);
     }
 
     .container {
@@ -41,28 +43,29 @@
     }
 
     h1 {
-        color: #58a6ff;
+        color: #2563eb;
         font-size: 36px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     h2 {
-        color: #58a6ff;
-        border-left: 5px solid #58a6ff;
+        color: #2563eb;
+        border-left: 5px solid #2563eb;
         padding-left: 10px;
         margin-top: 40px;
     }
 
     .card {
-        background: #161b22;
+        background: #f3f4f6; /* light silver */
         padding: 25px;
         border-radius: 12px;
         margin-top: 20px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        border: 1px solid #d1d5db; /* metallic border */
+        box-shadow: 0 0 12px rgba(0,0,0,0.07);
     }
 
     ul li {
-        margin-bottom: 8px;
+        margin-bottom: 7px;
     }
 </style>
 </head>
@@ -79,14 +82,14 @@
 
     <div>
         <a href="https://github.com/hmozaff" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" 
-                 width="22" height="22" style="filter: invert(100%);" alt="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                 width="22" height="22" alt="GitHub">
         </a>
 
         <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/"
            target="_blank" class="social-link">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
-                 width="22" height="22" style="filter: invert(100%);" alt="LinkedIn">
+                 width="22" height="22" alt="LinkedIn">
         </a>
     </div>
 </nav>
@@ -94,39 +97,39 @@
 <div class="container">
 
     <h1>Industry Portfolio – Hamed Mozaffari</h1>
-    <p>Robotics • AI • Motion Planning • ADAS • Autonomous Systems</p>
+    <p style="font-size: 17px">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</p>
 
     <h2>Professional Summary</h2>
     <div class="card">
         <p>
-            Robotics & AI engineer specializing in state estimation, robot learning, motion planning,
-            nonlinear control, ADAS perception–control integration, and intelligent autonomous systems.
-            Experienced in building full-stack robotics pipelines using ROS2, C++17/20, Python, and
-            ML-based models for autonomous driving and manipulation.
+            Robotics & AI engineer specializing in motion planning, robot learning,
+            state estimation, nonlinear control, and ADAS integration.
+            Experienced in ROS2, C++17/20, Python, and simulation-to-real deployment
+            for autonomous robots and manipulators.
         </p>
     </div>
 
     <h2>Core Technical Skills</h2>
     <div class="card">
         <ul>
-            <li><b>ROS2:</b> Humble/Foxy, real-time systems, lifecycle nodes</li>
-            <li><b>C++17/20 & Python:</b> modern CMake, multi-threading</li>
-            <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt</li>
-            <li><b>Sensor Fusion:</b> Kalman filters, nonlinear filtering, robot learning models</li>
-            <li><b>AI & ML:</b> neural networks, reinforcement learning for control</li>
+            <li><b>ROS2:</b> lifecycle nodes, navigation stack, real-time systems</li>
+            <li><b>C++17/20 & Python:</b> threading, CMake, high-performance robotics code</li>
+            <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt, MPC-style trajectories</li>
+            <li><b>Sensor Fusion:</b> EKF/UKF, LiDAR–IMU fusion, nonlinear filtering</li>
+            <li><b>AI & ML:</b> neural networks, RL for control, IK learning</li>
             <li><b>Simulation:</b> Gazebo, Isaac Sim, RViz, Webots</li>
-            <li><b>Manipulation:</b> IK/FK, Jacobians, dynamics, grasping</li>
+            <li><b>Manipulation:</b> 6-DOF control, Jacobians, dynamic constraints</li>
         </ul>
     </div>
 
     <h2>Industry Projects</h2>
     <div class="card">
         <ul>
-            <li>Autonomous robot navigation pipeline (mapping → planning → control → execution)</li>
-            <li>6-DOF robotic arm learning-based grasping for real-world manipulation</li>
-            <li>ADAS motion planning & delay-aware state estimation for autonomous driving</li>
-            <li>Multi-sensor fusion (LiDAR, IMU, RGB-D) with ROS2 full-stack integration</li>
-            <li>Neural-network inverse kinematics for high-precision control</li>
+            <li>Full autonomous navigation pipeline (mapping → planning → control → deployment)</li>
+            <li>Learning-based grasping for 6-DOF robotic arm</li>
+            <li>ADAS motion planning integrated with delay-aware estimation</li>
+            <li>Multi-sensor fusion system (LiDAR + IMU + RGB-D) with ROS2</li>
+            <li>Neural-network inverse kinematics for precision manipulation</li>
         </ul>
     </div>
 
