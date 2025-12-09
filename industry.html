@@ -1,120 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Industry Portfolio – Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Portfolio – Hamed Mozaffari</title>
 
 <style>
     body {
-        font-family: 'Segoe UI', sans-serif;
-        background: #f4f4f7;
         margin: 0;
-        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #0d1117;
+        color: #c9d1d9;
     }
 
-    .header {
-        text-align: center;
-        padding: 50px 20px;
-        background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    nav {
+        background: linear-gradient(90deg, #0057ff, #7b00ff);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
         color: white;
-        border-radius: 0 0 20px 20px;
-        margin-bottom: 40px;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: bold;
     }
 
-    h1 {
-        margin: 0;
-        font-size: 36px;
-        font-weight: 700;
-    }
-
-    .tagline {
-        font-size: 18px;
-        margin-top: 10px;
-        opacity: 0.9;
+    .social-link img {
+        margin-left: 15px;
+        cursor: pointer;
     }
 
     .container {
-        width: 85%;
+        padding: 40px;
         max-width: 1100px;
         margin: auto;
     }
 
-    .card {
-        background: white;
-        padding: 30px;
-        margin-bottom: 30px;
-        border-radius: 16px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    h1 {
+        color: #58a6ff;
+        font-size: 36px;
+        margin-bottom: 0;
     }
 
     h2 {
-        color: #111827;
-        margin-bottom: 15px;
-        font-weight: 600;
+        color: #58a6ff;
+        border-left: 5px solid #58a6ff;
+        padding-left: 10px;
+        margin-top: 40px;
     }
 
-    ul {
-        margin-left: 20px;
-        color: #374151;
-        line-height: 1.7;
+    .card {
+        background: #161b22;
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    ul li {
+        margin-bottom: 8px;
     }
 </style>
-
 </head>
+
 <body>
 
-<div class="header">
-    <h1>Industry Portfolio – Hamed Mozaffari</h1>
-    <div class="tagline">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</div>
-</div>
+<nav>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="academic.html">Academic</a>
+        <a href="industry.html">Industry</a>
+        <a href="Hamed_Mozaffari_CV.pdf">CV</a>
+    </div>
+
+    <div>
+        <a href="https://github.com/hmozaff" target="_blank" class="social-link">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" 
+                 width="22" height="22" style="filter: invert(100%);" alt="GitHub">
+        </a>
+
+        <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/"
+           target="_blank" class="social-link">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                 width="22" height="22" style="filter: invert(100%);" alt="LinkedIn">
+        </a>
+    </div>
+</nav>
 
 <div class="container">
 
+    <h1>Industry Portfolio – Hamed Mozaffari</h1>
+    <p>Robotics • AI • Motion Planning • ADAS • Autonomous Systems</p>
+
+    <h2>Professional Summary</h2>
     <div class="card">
-        <h2>Professional Summary</h2>
         <p>
             Robotics & AI engineer specializing in state estimation, robot learning, motion planning,
             nonlinear control, ADAS perception–control integration, and intelligent autonomous systems.
             Experienced in building full-stack robotics pipelines using ROS2, C++17/20, Python, and
-            ML-based models for real-world autonomous driving and manipulation tasks.
+            ML-based models for autonomous driving and manipulation.
         </p>
     </div>
 
+    <h2>Core Technical Skills</h2>
     <div class="card">
-        <h2>Core Technical Skills</h2>
         <ul>
-            <li><b>ROS2 (Humble/Foxy)</b>, real-time systems, lifecycle nodes</li>
-            <li><b>C++17/20</b>, Python, modern CMake, multi-threading</li>
-            <li><b>Motion planning:</b> RRT*, CHOMP, TrajOpt, smooth trajectory optimization</li>
-            <li><b>Sensor fusion:</b> Kalman filters, nonlinear filtering, robot learning models</li>
+            <li><b>ROS2:</b> Humble/Foxy, real-time systems, lifecycle nodes</li>
+            <li><b>C++17/20 & Python:</b> modern CMake, multi-threading</li>
+            <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt</li>
+            <li><b>Sensor Fusion:</b> Kalman filters, nonlinear filtering, robot learning models</li>
             <li><b>AI & ML:</b> neural networks, reinforcement learning for control</li>
             <li><b>Simulation:</b> Gazebo, Isaac Sim, RViz, Webots</li>
             <li><b>Manipulation:</b> IK/FK, Jacobians, dynamics, grasping</li>
         </ul>
     </div>
 
+    <h2>Industry Projects</h2>
     <div class="card">
-        <h2>Industry Projects</h2>
         <ul>
-            <li>Autonomous robot navigation pipeline (mapping → planning → control → simulation → execution)</li>
+            <li>Autonomous robot navigation pipeline (mapping → planning → control → execution)</li>
             <li>6-DOF robotic arm learning-based grasping for real-world manipulation</li>
-            <li>ADAS motion planning and delay-aware state estimation for autonomous driving</li>
-            <li>Full ROS2 integration for multi-sensor fusion (LiDAR, IMU, RGB-D)</li>
+            <li>ADAS motion planning & delay-aware state estimation for autonomous driving</li>
+            <li>Multi-sensor fusion (LiDAR, IMU, RGB-D) with ROS2 full-stack integration</li>
             <li>Neural-network inverse kinematics for high-precision control</li>
         </ul>
     </div>
 
+    <h2>Contact</h2>
     <div class="card">
-        <h2>Contact</h2>
         <p>Email: hmozaff@siue.edu</p>
         <p>GitHub: https://github.com/hmozaff</p>
+        <p>LinkedIn: https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/</p>
         <p>Website: https://hmozaff.github.io</p>
     </div>
 
