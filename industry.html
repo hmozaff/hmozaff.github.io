@@ -8,139 +8,133 @@
 <style>
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
-        background: #e5e7eb; /* SILVER background */
-        color: #374151;      /* dark gray for readability */
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(180deg, #E5E5E5, #CFCFCF);
+        color: #1a1a1a;
     }
 
-    nav {
-        background: linear-gradient(90deg, #2563eb, #4f46e5); /* blue → indigo */
-        padding: 15px 40px;
+    /* TOP NAV */
+    .navbar {
+        background: linear-gradient(90deg, #AEB6BF, #D5D8DC);
+        padding: 18px;
+        font-size: 18px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
+        gap: 25px;
+        font-weight: 600;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     }
-
-    nav a {
-        color: white;
+    .navbar a {
         text-decoration: none;
-        margin-left: 20px;
-        font-size: 16px;
-        font-weight: bold;
+        color: #1B2631;
+    }
+    .navbar a:hover {
+        color: #2E86C1;
     }
 
-    .social-link img {
-        margin-left: 15px;
-        cursor: pointer;
-        filter: invert(100%);
-    }
-
-    .container {
-        padding: 40px;
-        max-width: 1100px;
-        margin: auto;
-    }
-
+    /* PAGE TITLE */
     h1 {
-        color: #2563eb;
+        text-align: center;
         font-size: 36px;
-        margin-bottom: 10px;
+        margin-top: 45px;
+        color: #1B2631;
+        font-weight: 700;
+    }
+    .subtitle {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+        color: #34495E;
+    }
+
+    /* CARDS */
+    .section {
+        width: 75%;
+        margin: auto;
+        background: rgba(255,255,255,0.55);
+        padding: 24px 30px;
+        border-radius: 16px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+        backdrop-filter: blur(10px);
+        margin-bottom: 40px;
     }
 
     h2 {
-        color: #2563eb;
-        border-left: 5px solid #2563eb;
+        color: #2E86C1;
+        border-left: 6px solid #2E86C1;
         padding-left: 10px;
-        margin-top: 40px;
+        font-size: 26px;
     }
 
-    .card {
-        background: #f3f4f6; /* light silver */
-        padding: 25px;
-        border-radius: 12px;
-        margin-top: 20px;
-        border: 1px solid #d1d5db; /* metallic border */
-        box-shadow: 0 0 12px rgba(0,0,0,0.07);
+    ul {
+        font-size: 17px;
+        line-height: 1.65;
     }
 
-    ul li {
-        margin-bottom: 7px;
+    .contact a {
+        color: #2E86C1;
+        text-decoration: none;
+        font-weight: bold;
     }
 </style>
 </head>
 
 <body>
 
-<nav>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="academic.html">Academic</a>
-        <a href="industry.html">Industry</a>
-        <a href="Hamed_Mozaffari_CV.pdf">CV</a>
-    </div>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academic</a>
+    <a href="industry.html">Industry</a>
+    <a href="Hamed_Mozaffari_CV.pdf">CV</a>
+    <a href="https://linkedin.com/in/hamed-mozaffari-ba60202b5" target="_blank">LinkedIn</a>
+</div>
 
-    <div>
-        <a href="https://github.com/hmozaff" target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
-                 width="22" height="22" alt="GitHub">
-        </a>
+<h1>Industry Portfolio – Hamed Mozaffari</h1>
+<div class="subtitle">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</div>
 
-        <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/"
-           target="_blank" class="social-link">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
-                 width="22" height="22" alt="LinkedIn">
-        </a>
-    </div>
-</nav>
-
-<div class="container">
-
-    <h1>Industry Portfolio – Hamed Mozaffari</h1>
-    <p style="font-size: 17px">Robotics • AI • Motion Planning • ADAS • Autonomous Systems</p>
-
+<!-- ===== Professional Summary ===== -->
+<div class="section">
     <h2>Professional Summary</h2>
-    <div class="card">
-        <p>
-            Robotics & AI engineer specializing in motion planning, robot learning,
-            state estimation, nonlinear control, and ADAS integration.
-            Experienced in ROS2, C++17/20, Python, and simulation-to-real deployment
-            for autonomous robots and manipulators.
-        </p>
-    </div>
+    <p>
+        Robotics & AI engineer specializing in state estimation, robot learning, motion planning, nonlinear control,
+        ADAS perception–control integration, and intelligent autonomous systems. Experienced in building full-stack
+        robotics pipelines using ROS2, C++17/20, Python, and ML-based models for real-world autonomous driving and
+        manipulation tasks.
+    </p>
+</div>
 
+<!-- ===== Core Skills ===== -->
+<div class="section">
     <h2>Core Technical Skills</h2>
-    <div class="card">
-        <ul>
-            <li><b>ROS2:</b> lifecycle nodes, navigation stack, real-time systems</li>
-            <li><b>C++17/20 & Python:</b> threading, CMake, high-performance robotics code</li>
-            <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt, MPC-style trajectories</li>
-            <li><b>Sensor Fusion:</b> EKF/UKF, LiDAR–IMU fusion, nonlinear filtering</li>
-            <li><b>AI & ML:</b> neural networks, RL for control, IK learning</li>
-            <li><b>Simulation:</b> Gazebo, Isaac Sim, RViz, Webots</li>
-            <li><b>Manipulation:</b> 6-DOF control, Jacobians, dynamic constraints</li>
-        </ul>
-    </div>
+    <ul>
+        <li><b>ROS2:</b> Humble/Foxy, real-time systems, lifecycle nodes</li>
+        <li><b>C++17/20 & Python:</b> modern CMake, multi-threading</li>
+        <li><b>Motion Planning:</b> RRT*, CHOMP, TrajOpt, smooth trajectory optimization</li>
+        <li><b>Sensor Fusion:</b> Kalman filters, nonlinear filtering, robot learning models</li>
+        <li><b>AI & ML:</b> neural networks, reinforcement learning for control</li>
+        <li><b>Simulation:</b> Gazebo, Isaac Sim, RViz, Webots</li>
+        <li><b>Manipulation:</b> IK/FK, Jacobians, dynamics, grasping</li>
+    </ul>
+</div>
 
+<!-- ===== Industry Projects ===== -->
+<div class="section">
     <h2>Industry Projects</h2>
-    <div class="card">
-        <ul>
-            <li>Full autonomous navigation pipeline (mapping → planning → control → deployment)</li>
-            <li>Learning-based grasping for 6-DOF robotic arm</li>
-            <li>ADAS motion planning integrated with delay-aware estimation</li>
-            <li>Multi-sensor fusion system (LiDAR + IMU + RGB-D) with ROS2</li>
-            <li>Neural-network inverse kinematics for precision manipulation</li>
-        </ul>
-    </div>
+    <ul>
+        <li>Autonomous robot navigation pipeline (mapping → planning → control → simulation → execution)</li>
+        <li>6-DOF robotic arm learning-based grasping for real-world manipulation</li>
+        <li>ADAS motion planning and delay-aware state estimation for autonomous driving</li>
+        <li>Full ROS2 integration for multi-sensor fusion (LiDAR, IMU, RGB-D)</li>
+        <li>Neural-network inverse kinematics for high-precision control</li>
+    </ul>
+</div>
 
+<!-- ===== Contact ===== -->
+<div class="section contact">
     <h2>Contact</h2>
-    <div class="card">
-        <p>Email: hmozaff@siue.edu</p>
-        <p>GitHub: https://github.com/hmozaff</p>
-        <p>LinkedIn: https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/</p>
-        <p>Website: https://hmozaff.github.io</p>
-    </div>
-
+    <p>Email: hmozaff@siue.edu</p>
+    <p>GitHub: <a href="https://github.com/hmozaff">https://github.com/hmozaff</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/hamed-mozaffari-ba60202b5">linkedin.com/in/hamed-mozaffari</a></p>
+    <p>Website: <a href="https://hmozaff.github.io">hmozaff.github.io</a></p>
 </div>
 
 </body>
