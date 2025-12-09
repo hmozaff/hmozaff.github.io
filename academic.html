@@ -8,153 +8,83 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content=device-width, initial-scale=1.0">
-    <title>Academic Portfolio — Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<title>Academic Experience – Hamed Mozaffari</title>
 
-    <style>
-        body {
-            margin: 0;
-            background-color: #0A192F;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: #E6F1FF;
-            line-height: 1.75;
-        }
-
-        .container {
-            max-width: 950px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 40px;
-            color: #64FFDA;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 26px;
-            color: #89A8C8;
-            margin-top: 50px;
-            border-bottom: 1px solid #112240;
-            padding-bottom: 8px;
-        }
-
-        p, li {
-            font-size: 19px;
-            color: #CCD6F6;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        .back a {
-            color: #64FFDA;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .card {
-            background-color: #112240;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            border-left: 4px solid #64FFDA;
-        }
-
-        .pub-title {
-            color: #64FFDA;
-            font-weight: bold;
-        }
-
-        .section-desc {
-            color: #A8B6D8;
-            margin-bottom: 10px;
-            font-size: 17px;
-        }
-
-        .cv-button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 22px;
-            background-color: #64FFDA;
-            color: #0A192F;
-            border-radius: 6px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .cv-button:hover {
-            background-color: #9EFEEA;
-        }
-    </style>
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+  }
+  .container {
+      width: 80%;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  hr {
+      margin: 20px 0;
+  }
+  .btn {
+      background: #003366;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+  }
+  .btn:hover {
+      background: #0055aa;
+  }
+</style>
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <div class="back">
-            <a href="index.html">← Back to Home</a>
-        </div>
+<h1>Academic Experience</h1>
 
-        <h1>Academic Portfolio</h1>
+<!-- DOWNLOAD BUTTON -->
+<p style="text-align:center; margin-top:20px;">
+  <a href="cv_academic.pdf" download class="btn">Download Academic CV</a>
+</p>
 
-        <h2>Research Overview</h2>
-        <div class="card">
-            <p>
-                My academic work focuses on delayed-state Bayesian estimation, nonlinear filtering, 
-                and human-centered autonomy for robotic and dynamic systems. I study how measurement delays, 
-                asynchronous sensing, and nonlinearities influence system stability, observability, and estimation accuracy.
-            </p>
-            <p>
-                I develop delay-aware EKF/UKF/CKF formulations, quaternion-constrained filters, 
-                and motivational human driver models inspired by cognitive psychology. 
-                My goal is to build mathematically rigorous and computationally efficient estimation 
-                frameworks deployable on real robotic platforms.
-            </p>
-        </div>
+<hr>
 
-        <h2>Selected Publications</h2>
-        <div class="card">
-            <ul>
-                <li><span class="pub-title">Bayesian Investigation on Nonlinear Estimation with Delayed Measurement</span> — Mozaffari, Dabiri, Gu (2025).</li>
-                <li><span class="pub-title">Motivational Driver Model for Rear-End Collision Avoidance</span> — Mozaffari, Nahvi.</li>
-                <li><span class="pub-title">A Motivational Driver Steering Model: Task Difficulty Homeostasis</span> — Mozaffari, Nahvi.</li>
-                <li><span class="pub-title">Human Driver Model for Autonomous Vehicle Analysis</span> — Mozaffari, Nahvi.</li>
-            </ul>
-        </div>
+<h2>Research Focus</h2>
+<ul>
+  <li>Delayed-state estimation and recursive Bayesian filtering</li>
+  <li>Lead-measurement transformation for asynchronous sensor systems</li>
+  <li>EKF / UKF / CKF for nonlinear stochastic systems</li>
+  <li>State estimation for rigid-body motion using IMU + Camera</li>
+  <li>Control stability under measurement latency</li>
+</ul>
 
-        <h2>Research Projects</h2>
-        <div class="card">
-            <ul>
-                <li><strong>Delay-Aware EKF/UKF/CKF Framework:</strong> A reorganized nonlinear estimation architecture enabling stable inference under measurement delays without increasing state dimension.</li>
-                <li><strong>Quaternion-Constrained UKF:</strong> A robust orientation estimation method with norm stabilization and improved propagation under noise and disturbances.</li>
-                <li><strong>Motivational Human Driver Model:</strong> A psychologically inspired driver model for AV simulation, risk assessment, and crash-avoidance control design.</li>
-            </ul>
-        </div>
+<h2>Teaching Experience</h2>
+<ul>
+  <li>Modern Control</li>
+  <li>Nonlinear Control</li>
+  <li>Estimation Theory</li>
+  <li>Robotics and Mechatronics Labs</li>
+</ul>
 
-        <h2>Teaching Experience</h2>
-        <div class="card">
-            <ul>
-                <li><strong>Sensors and Actuators — Instructor</strong></li>
-                <li><strong>Introduction to Mechatronics — Instructor</strong></li>
-                <li><strong>Modern Control — Instructor</strong></li>
-                <li><strong>Autonomous Ground Vehicles Lab — Designer & Instructor</strong></li>
-            </ul>
-        </div>
+<h2>Publications</h2>
+<p>Full academic CV includes detailed publication list.</p>
 
-        <h2>Academic CV</h2>
-        <p class="section-desc">You can download my full academic CV below:</p>
-        <a href="cv.pdf" class="cv-button">Download CV (PDF)</a>
+<br><br>
 
-    </div>
+</div>
 
 </body>
-
 </html>
