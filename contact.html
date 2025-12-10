@@ -1,93 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact – Hamed Mozaffari</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Hamed Mozaffari</title>
 
-<style>
-    body { font-family: Arial; margin:0; background:#f7f7f7; }
-    nav { text-align:center; margin:20px 0; }
-    nav a { margin:0 15px; font-size:20px; text-decoration:none; color:#333; }
-    nav a:hover { text-decoration:underline; }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
 
-    .container { max-width:1100px; margin:40px auto; background:white; padding:25px;
-        display:flex; border-radius:8px; }
+        .navbar {
+            background-color: #111;
+            padding: 12px;
+            text-align: center;
+        }
 
-    .sidebar { width:280px; text-align:center; padding-right:25px; border-right:1px solid #ddd; }
-    .sidebar img { width:200px; border-radius:50%; }
-    .sidebar h2 { margin-top:10px; font-size:26px; }
-    .sidebar p { font-size:14px; color:#444; }
+        .navbar a {
+            color: #66ccff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+        }
 
-    .btn {
-        display:block; background:#4a73ff; color:white; padding:12px; margin-top:12px;
-        text-align:center; border-radius:6px; text-decoration:none;
-    }
+        .navbar a:hover {
+            color: #fff;
+        }
 
-    .content { flex:1; padding-left:40px; }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+        }
 
-    input, textarea {
-        width:100%; padding:10px; margin-top:10px;
-        border-radius:5px; border:1px solid #aaa;
-    }
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
 
-    button {
-        background:#4a73ff; color:white; padding:12px 20px;
-        border-radius:5px; border:none; margin-top:10px; cursor:pointer;
-    }
-</style>
+        .contact-box {
+            background-color: #f4f7fc;
+            border-left: 5px solid #4A76FF;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #0056cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #003d99;
+        }
+
+        .label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
+<div class="navbar">
     <a href="index.html">Home</a>
     <a href="academic.html">Academic</a>
     <a href="industry.html">Industry</a>
     <a href="teaching.html">Teaching</a>
-    <a href="contact.html" style="font-weight:bold;">Contact</a>
-</nav>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</div>
 
 <div class="container">
 
-    <div class="sidebar">
-        <img src="profile.png" alt="Profile Image">
+    <h1>Contact Information</h1>
 
-        <h2>Hamed Mozaffari</h2>
+    <div class="contact-box">
 
+        <div class="label">📧 Email</div>
         <p>
-            Dual PhDs in Mech. Eng. (Control & Dynamics)  
-            Eng. Sc. (Robotics)  
-            Robotics | Estimation | Planning | AI
+            <a href="mailto:hmozaff@gmail.com">hmozaff@gmail.com</a>
         </p>
 
-        <a href="cv_academic.pdf" class="btn">Download Academic CV</a>
-        <a href="cv_industry.pdf" class="btn">Download Industry CV</a>
-    </div>
-
-    <div class="content">
-        <h1>Contact Information</h1>
-        <p>You can reach me through:</p>
-
-        <h3>Email</h3>
-        <p><b>hmozaff@siue.edu</b></p>
-
-        <h3>LinkedIn</h3>
+        <div class="label">🔗 LinkedIn</div>
         <p>
-            <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/" target="_blank">
+            <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60225b5/" target="_blank">
                 linkedin.com/in/hamed-mozaffari
             </a>
         </p>
 
-        <h3>Message Form</h3>
-        <p>(This form does not send messages automatically on GitHub Pages.)</p>
+        <div class="label">🐙 GitHub</div>
+        <p>
+            <a href="https://github.com/hmozaff" target="_blank">
+                github.com/hmozaff
+            </a>
+        </p>
 
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message" rows="5"></textarea>
-            <button type="button">Send</button>
-        </form>
+        <div class="label">📍 Location</div>
+        <p>
+            Edwardsville, IL, USA
+        </p>
+
+        <div class="label">📄 CV (Download)</div>
+        <p>
+            <a href="cv_academic.pdf" download>Academic CV</a> |
+            <a href="cv_industry.pdf" download>Industry CV</a>
+        </p>
+
     </div>
 
 </div>
