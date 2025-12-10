@@ -1,153 +1,172 @@
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-<style>
-.navbar {
-    background-color: #111;
-    padding: 12px;
-    text-align: center;
-}
-.navbar a {
-    color: #66ccff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: white;
-}
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Hamed Mozaffari</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-        }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+  }
 
-        .navbar {
-            background-color: #111;
-            padding: 12px;
-            text-align: center;
-        }
+  /* NAVBAR */
+  .navbar {
+    background: #111;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #6ab7ff;
+    margin: 0 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: white;
+  }
 
-        .navbar a {
-            color: #66ccff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 19px;
-            font-weight: bold;
-        }
+  .page-space {
+    height: 90px;
+  }
 
-        .navbar a:hover {
-            color: #fff;
-        }
+  /* MAIN LAYOUT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-        }
+  .left {
+    width: 35%;
+    text-align: center;
+  }
+  .profile-img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 50%;
+  }
 
-        h1 {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 10px;
-        }
+  .title-line {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-        .contact-box {
-            background-color: #f4f7fc;
-            border-left: 5px solid #4A76FF;
-            border-radius: 10px;
-            padding: 25px;
-            margin-top: 20px;
-            font-size: 18px;
-            line-height: 1.7;
-        }
+  .right {
+    width: 65%;
+  }
 
-        a {
-            color: #0056cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
+  h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 
-        a:hover {
-            color: #003d99;
-        }
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
 
-        .label {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 18px;
-        }
-    </style>
+  p, a, li {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .contact-box {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #6ab7ff;
+    margin-bottom: 25px;
+  }
+
+  .contact-box a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+</style>
 </head>
 
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="industry.html">Industry</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="page-space"></div>
 
 <div class="container">
 
-    <h1>Contact Information</h1>
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="profile.png" class="profile-img" alt="Hamed Mozaffari">
+
+    <p class="title-line">
+      Dual PhDs in Mechanical Engineering (Control & Dynamics) & Engineering Science (Robotics) <br>
+      Robotics • State Estimation • Motion Planning • Sensor Fusion • AV/ADAS • AI
+    </p>
+  </div>
+
+  <!-- RIGHT SIDE: CONTACT INFORMATION -->
+  <div class="right">
+
+    <h2>Contact</h2>
 
     <div class="contact-box">
-
-        <div class="label">📧 Email</div>
-        <p>
-            <a href="mailto:hmozaff@gmail.com">hmozaff@gmail.com</a>
-        </p>
-
-        <div class="label">🔗 LinkedIn</div>
-        <p>
-            <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60225b5/" target="_blank">
-                linkedin.com/in/hamed-mozaffari
-            </a>
-        </p>
-
-        <div class="label">🐙 GitHub</div>
-        <p>
-            <a href="https://github.com/hmozaff" target="_blank">
-                github.com/hmozaff
-            </a>
-        </p>
-
-        <div class="label">📍 Location</div>
-        <p>
-            Edwardsville, IL, USA
-        </p>
-
-        <div class="label">📄 CV (Download)</div>
-        <p>
-            <a href="cv_academic.pdf" download>Academic CV</a> |
-            <a href="cv_industry.pdf" download>Industry CV</a>
-        </p>
-
+      <h3>Email</h3>
+      <p>
+        📧 <a href="mailto:hmozaff@siue.edu">hmozaff@siue.edu</a><br>
+        📧 <a href="mailto:hamedmozaffari@gmail.com">hamedmozaffari@gmail.com</a>
+      </p>
     </div>
 
+    <div class="contact-box">
+      <h3>LinkedIn</h3>
+      <p>
+        🔗 <a href="https://www.linkedin.com/in/hamed-mozaffari-ba60202b5/" target="_blank">
+          linkedin.com/in/hamed-mozaffari
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Google Scholar</h3>
+      <p>
+        📚 <a href="https://scholar.google.com/citations?hl=en&user=Q-3usisAAAAJ" target="_blank">
+          Google Scholar Profile
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-box">
+      <h3>Current Location</h3>
+      <p>
+        📍 Edwardsville, IL — USA
+      </p>
+    </div>
+
+  </div>
 </div>
 
 </body>
