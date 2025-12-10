@@ -8,108 +8,82 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamed Mozaffari — Robotics & Estimation</title>
+    <title>Hamed Mozaffari</title>
 
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #EAEAEA;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        h1 {
-            font-size: 42px;
-            color: #22D1EE;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 20px;
-            font-weight: 300;
-            color: #9BDFF5;
-            margin-top: -5px;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #DADADA;
-        }
-
-        .nav {
             margin-top: 40px;
         }
 
-        .nav a {
-            display: inline-block;
-            margin-right: 20px;
-            padding: 12px 22px;
-            background-color: #1F1F1F;
-            border: 1px solid #22D1EE;
-            border-radius: 6px;
-            color: #22D1EE;
+        img.profile {
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        p.bio {
+            font-size: 18px;
+            color: #333;
+            width: 85%;
+            margin: 15px auto;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: block;
+            width: 70%;
+            margin: 15px auto;
+            padding: 16px;
+            font-size: 20px;
+            background-color: #5b6bff;
+            color: white;
+            border-radius: 10px;
             text-decoration: none;
-            font-size: 17px;
-            transition: 0.3s;
         }
 
-        .nav a:hover {
-            background-color: #22D1EE;
-            color: #121212;
-        }
-
-        footer {
-            margin-top: 60px;
-            text-align: center;
-            font-size: 15px;
-            color: #777;
+        .btn:hover {
+            background-color: #4150d8;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Hamed Mozaffari</h1>
-        <h2>Robotics • Control • Estimation • Sensor Fusion</h2>
+<div class="container">
 
-        <p>
-            I am a dual-background Ph.D. researcher in Robotics and Control Engineering with deep experience in 
-            state estimation, nonlinear control, human–robot interaction, 6-DOF manipulation, and intelligent autonomy. 
-            I develop modern estimation frameworks, delay-aware Bayesian filters, robot learning algorithms, 
-            and embedded control systems for real-world robotics and autonomous platforms.
-        </p>
+    <img src="profile.png" class="profile">
 
-        <p>
-            My work spans both academia and industry, combining analytical modeling with hands-on implementation in ROS2, 
-            C++, Python, MATLAB, and embedded systems. I focus on designing reliable robotic systems that integrate perception, 
-            planning, control, and human-centered autonomy.
-        </p>
+    <h1>Hamed Mozaffari</h1>
 
-        <div class="nav">
-            <a href="academic.html">Academic Portfolio</a>
-            <a href="industry.html">Industry Portfolio</a>
-            <a href="Hamed_Mozaffari_CV.pdf">Download CV</a>
-        </div>
+    <p class="bio">
+        Dual PhDs in Mech. Eng. (Control & Dynamics)  
+        Eng. Sc. (Robotics)  
+        Robotics | Estimation | Planning | AI
+    </p>
 
-        <footer>
-            © 2025 Hamed Mozaffari — Robotics & Intelligent Systems
-        </footer>
-    </div>
+    <a class="btn" href="cv_academic.pdf" download>Download Academic CV</a>
+    <a class="btn" href="cv_industry.pdf" download>Download Industry CV</a>
+
+</div>
 
 </body>
-
 </html>
+
