@@ -1,170 +1,157 @@
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-<style>
-.navbar {
-    background-color: #111;
-    padding: 12px;
-    text-align: center;
-}
-.navbar a {
-    color: #66ccff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: white;
-}
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hamed Mozaffari – Home</title>
+<title>Hamed Mozaffari</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-    }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+  }
 
-    /* NAVIGATION BAR */
-    nav {
-        background-color: #111;
-        padding: 15px;
-        text-align: center;
-    }
-    nav a {
-        color: #66ccff;
-        margin: 0 18px;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    nav a:hover { color: white; }
+  /* NAVBAR */
+  .navbar {
+    background: #111;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    position: fixed;   /* همیشه بالای صفحه */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #6ab7ff;
+    margin: 0 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: white;
+  }
 
-    /* LAYOUT */
-    .container {
-        max-width: 1200px;
-        margin: 40px auto;
-        display: flex;
-        gap: 40px;
-        padding: 20px;
-    }
+  /* فاصله صفحه زیر navbar */
+  .page-space {
+    height: 90px;
+  }
 
-    .left {
-        width: 35%;
-        text-align: center;
-    }
+  /* MAIN CONTENT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
 
-    .left img {
-        width: 80%;
-        border-radius: 50%;
-        margin-bottom: 15px;
-    }
+  .left {
+    width: 35%;
+    text-align: center;
+  }
 
-    .name {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
+  .profile-img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 50%;
+  }
 
-    .bio {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 25px;
-    }
+  .right {
+    width: 65%;
+  }
 
-    .btn {
-        display: block;
-        width: 80%;
-        padding: 14px;
-        margin: 10px auto;
-        background-color: #4A76FF;
-        color: white;
-        text-align: center;
-        border-radius: 8px;
-        font-size: 18px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .btn:hover {
-        background-color: #365ad9;
-    }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
 
-    .right {
-        width: 65%;
-        font-size: 20px;
-        line-height: 1.7;
-    }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 
-    h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
-    }
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 
+  /* CV Buttons */
+  .cv-btn {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #5c79ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .cv-btn:hover {
+    background-color: #3a53cc;
+  }
 </style>
 </head>
 
-
 <body>
 
-<!-- SINGLE NAVBAR (FIXED) -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="industry.html">Industry</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
+<!-- فاصله برای جلوگیری از افتادن محتوا زیر navbar -->
+<div class="page-space"></div>
 
-<!-- MAIN CONTENT -->
+<!-- PAGE CONTENT -->
 <div class="container">
 
-    <!-- LEFT SIDE -->
-    <div class="left">
-        <img src="profile.png" alt="Profile Photo">
-        <div class="name">Hamed Mozaffari</div>
-        <div class="bio">
-            Dual PhDs in Mechanical Engineering (Control & Dynamics)  
-            and Engineering Science (Robotics).  
-            Robotics • Estimation • Planning • AI
-        </div>
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="profile.png" class="profile-img" alt="Hamed Mozaffari">
 
-        <a class="btn" href="cv_academic.pdf" download>Download Academic CV</a>
-        <a class="btn" href="cv_industry.pdf" download>Download Industry CV</a>
-    </div>
+    <h1>Hamed Mozaffari</h1>
 
-    <!-- RIGHT SIDE -->
-    <div class="right">
-        <h2>Welcome</h2>
+    <p style="font-size:18px;">
+      Dual PhDs in Mechanical Engineering (Control & Dynamics)  
+      and Engineering Science (Robotics).  
+      Robotics • Estimation • Motion Planning • AI
+    </p>
 
-        I am a dual-background Ph.D. researcher in Robotics and Control Engineering 
-        with deep experience in state estimation, nonlinear control, AI-driven autonomy, 
-        multi-sensor fusion (LiDAR, IMU, Camera), and intelligent robotic systems.
-        <br><br>
-        My work spans both academia and industry, focusing on robust autonomous platforms, 
-        delay-compensated estimation frameworks (EKF/UKF/CKF), motion planning (MPC, TrajOpt, CHOMP), 
-        and embedded systems for real robots.
-        <br><br>
-        This website includes my research background, robotics projects, teaching experience, 
-        and downloadable academic & industry CVs.
-    </div>
+    <a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
+    <a href="cv_industry.pdf" class="cv-btn">Download Industry CV</a>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h2>Welcome</h2>
+    <p>
+      I am a dual-background Ph.D. researcher in Robotics and Control Engineering  
+      with deep experience in state estimation, nonlinear control, AI-driven autonomy,  
+      multi-sensor fusion (LiDAR, IMU, Camera), and intelligent robotic systems.
+    </p>
+
+    <p>
+      My work spans both academia and industry, focusing on robust autonomous  
+      platforms, delay-compensated estimation frameworks (EKF/UKF/CKF), motion  
+      planning (MPC, TrajOpt, CHOMP), and embedded systems for real robots.
+    </p>
+
+    <p>
+      This website includes my research background, robotics projects,  
+      teaching experience, and downloadable academic & industry CVs.
+    </p>
+  </div>
 
 </div>
 
