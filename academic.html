@@ -1,170 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic | Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic – Hamed Mozaffari</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f5f5f5;
-        }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+  }
 
-        nav {
-            background-color: #111;
-            padding: 15px;
-            text-align: center;
-        }
+  /* NAVBAR */
+  .navbar {
+    background: #111;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #6ab7ff;
+    margin: 0 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: white;
+  }
 
-        nav a {
-            color: #82caff;
-            text-decoration: none;
-            margin: 0 25px;
-            font-size: 22px;
-            font-weight: bold;
-        }
+  .page-space {
+    height: 90px;
+  }
 
-        nav a:hover {
-            color: white;
-        }
+  /* MAIN CONTENT */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.7;
+    font-size: 20px;
+  }
 
-        .container {
-            max-width: 1400px;
-            margin: auto;
-            background-color: white;
-            padding: 40px;
-        }
+  h1 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
 
-        .left-box {
-            width: 35%;
-            float: left;
-            text-align: center;
-            padding-right: 50px;
-            border-right: 3px solid #ddd;
-        }
+  h2 {
+    font-size: 30px;
+    margin-top: 35px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
 
-        .left-box img {
-            width: 80%;
-            border-radius: 50%;
-        }
+  ul {
+    font-size: 20px;
+  }
 
-        .right-box {
-            width: 60%;
-            float: right;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin-top: 40px;
-            color: #111;
-        }
-
-        ul {
-            font-size: 20px;
-        }
-
-        .btn {
-            display: block;
-            margin: 20px auto;
-            padding: 14px 28px;
-            background-color: #4a6cf7;
-            color: white;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 8px;
-            width: 70%;
-            text-align: center;
-        }
-
-        .btn:hover {
-            background-color: #1f3fcf;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 40px;
-            color: #777;
-        }
-    </style>
+  .cv-btn {
+    display: block;
+    width: 260px;
+    padding: 15px;
+    margin: 25px auto;
+    background-color: #5c79ff;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .cv-btn:hover {
+    background-color: #3a53cc;
+  }
+</style>
 </head>
 
 <body>
 
-<!-- 🔹 NAVBAR -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="industry.html">Industry</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
 </nav>
+
+<div class="page-space"></div>
 
 <div class="container">
 
-    <!-- LEFT SIDE -->
-    <div class="left-box">
-        <img src="profile.png" alt="Profile Photo">
+<h1>Academic Profile</h1>
 
-        <h2>Hamed Mozaffari</h2>
+<!-- Academic Background -->
+<h2>Academic Background</h2>
+<p>
+I am a dual-background Ph.D. researcher in <strong>Robotics, Control Systems, and Autonomous Intelligence</strong>,  
+with specialization in nonlinear estimation, multi-sensor fusion, motion planning,  
+and delay-compensated filtering frameworks (EKF/UKF/CKF).  
+My research aims to develop mathematically rigorous and computationally efficient algorithms  
+for real-world autonomous robotic systems.
+</p>
 
-        <p style="font-size:20px;">
-            Dual PhDs in Mechanical Engineering (Control & Dynamics)  
-            & Engineering Science (Robotics)  
-            <br>Robotics • Estimation • Planning • Sensor Fusion • AV/ADAS • AI
-        </p>
+<!-- Research Interests -->
+<h2>Research Interests</h2>
+<ul>
+  <li>State Estimation & Nonlinear Filtering (EKF, UKF, CKF)</li>
+  <li>Sensor Fusion using LiDAR, IMU, Camera, and Multi-modal Systems</li>
+  <li>Time-Delay Systems & Delay Compensation in Robotics</li>
+  <li>Autonomous Robotics • Motion Planning • Optimal Control</li>
+  <li>AI & Learning-Based Control for Autonomous Systems</li>
+</ul>
 
-        <a href="cv_academic.pdf" class="btn" download>Download Academic CV</a>
-    </div>
+<!-- Expanded Research Statement -->
+<h2>Expanded Research Profile</h2>
+<p>
+My research integrates theoretical control and estimation with practical autonomous systems.  
+I focus on designing algorithms that remain robust despite sensor noise, delay, environmental uncertainty,  
+and real-time computational constraints.  
+Examples of my recent work include:
+</p>
 
-    <!-- RIGHT SIDE -->
-    <div class="right-box">
-        
-        <h2>Academic Background</h2>
-        <p style="font-size:22px; line-height:1.6;">
-            Researcher in autonomous systems, state estimation, and 
-            delay-compensated sensor fusion with EKF/UKF/CKF, nonlinear filtering, 
-            and robotics algorithms.
-        </p>
+<ul>
+  <li>
+    Developing <strong>augmented measurement–lead models</strong>  
+    to eliminate state-growth in delay systems, enabling efficient application of EKF/UKF/CKF.
+  </li>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li>State Estimation & Nonlinear Filtering</li>
-            <li>Sensor Fusion (LiDAR, IMU, Camera)</li>
-            <li>Autonomous Robotics & Motion Planning</li>
-            <li>Time-Delay Systems & Delay Compensation</li>
-            <li>AI and Reinforcement Learning for Robotics</li>
-        </ul>
+  <li>
+    Designing <strong>multi-sensor fusion pipelines</strong> combining LiDAR, IMU, and vision systems  
+    for high-accuracy robotics localization.
+  </li>
 
-        <h2>Teaching Experience </h2>
-        <p style="font-size:22px; line-height:1.6;">
-            I have independently taught and redesigned multiple undergraduate courses 
-            at Southern Illinois University Edwardsville (SIUE), K. N. Toosi University 
-            of Technology, and Azad University (Hashtgerd Branch). My role includes 
-            developing lectures, assignments, laboratory modules, hands-on projects, 
-            and exams.
-        </p>
+  <li>
+    Creating <strong>robust motion planning frameworks</strong> using MPC, CHOMP, and TrajOpt  
+    for safe navigation in uncertain environments.
+  </li>
 
-        <p style="font-size:22px; line-height:1.6;">
-            My teaching areas include sensors and actuators, mechatronics with Raspberry Pi, 
-            dynamic systems labs, ground vehicle dynamics, automatic control, engineering 
-            programming, applied machine design, and finite-element methods using ANSYS.
-        </p>
+  <li>
+    Investigating <strong>learning-enabled control</strong> for autonomous ground vehicles  
+    integrating behavior prediction and adaptive control.
+  </li>
+</ul>
 
-        <p style="font-size:22px; line-height:1.6;">
-            I received the Outstanding Instructor Award in 2014 and 2016 based on student evaluations.
-        </p>
+<p>
+My long-term research vision is to develop perception–estimation–planning algorithms  
+that unify mathematical rigor with industrial deployability,  
+bridging the gap between academic theory and practical robotics applications.
+</p>
 
-    </div>
+<!-- Publications -->
+<h2>Selected Publications</h2>
 
-    <div style="clear:both;"></div>
+<ul>
+  <li>
+    <strong>H. Mozaffari</strong>, A. Dabiri, K. Gu,  
+    <em>“Bayesian Investigation on the Nonlinear Estimation Problem with Delayed Measurement.”</em>  
+    (2025) — Under Review.
+  </li>
 
-</div>
+  <li>
+    <strong>H. Mozaffari</strong>, A. Nahvi,  
+    <em>“A Motivational Driver Steering Model: Task Difficulty Homeostasis.”</em>  
+    ASME / IEEE Conferences.
+  </li>
 
-<div class="footer">
-    © 2025 Hamed Mozaffari — Robotics & Intelligent Systems
+  <li>
+    <strong>H. Mozaffari</strong>, A. Nahvi,  
+    <em>“Human Driver Model for Rear-End Collision Avoidance.”</em>  
+    Journal of Dynamic Systems & Control.
+  </li>
+
+  <li>Additional publications available upon request.</li>
+</ul>
+
+<!-- Research Skills -->
+<h2>Research Tools & Technical Expertise</h2>
+<ul>
+  <li>MATLAB, Simulink, ROS2, Python</li>
+  <li>Sensor Fusion: LiDAR, IMU, Camera pipelines</li>
+  <li>Trajectory Optimization: MPC, CHOMP, TrajOpt</li>
+  <li>State Estimation: EKF / UKF / CKF / MEKF</li>
+  <li>Control Design: Nonlinear, Optimal, Robust</li>
+  <li>C++, Modern CMake, Eigen</li>
+</ul>
+
+<!-- CV Button -->
+<a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
+
 </div>
 
 </body>
