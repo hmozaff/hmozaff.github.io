@@ -16,16 +16,15 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #ffffff;
         }
 
-        /* NAVBAR */
+        /* Navbar */
         .navbar {
             background-color: #111;
-            padding: 12px 0;
+            padding: 12px;
             text-align: center;
         }
 
@@ -38,55 +37,70 @@
         }
 
         .navbar a:hover {
-            color: #ffffff;
+            color: #fff;
         }
 
+        /* Container split layout */
         .container {
-            margin-top: 40px;
+            display: flex;
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
-        img.profile {
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
+        /* Left Profile Panel */
+        .profile-box {
+            width: 32%;
+            text-align: center;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+        }
+
+        .profile-box img {
+            width: 85%;
             border-radius: 50%;
         }
 
-        h1 {
+        .name {
             font-size: 32px;
-            margin-top: 20px;
             font-weight: bold;
+            margin-top: 15px;
         }
 
-        p.bio {
-            font-size: 18px;
-            color: #333;
-            width: 85%;
-            margin: 15px auto;
+        .bio {
+            margin-top: 10px;
+            font-size: 17px;
             line-height: 1.5;
         }
 
         .btn {
             display: block;
-            width: 70%;
+            width: 90%;
+            padding: 12px;
             margin: 15px auto;
-            padding: 16px;
-            font-size: 20px;
-            background-color: #5b6bff;
+            background-color: #4A76FF;
             color: white;
+            font-size: 18px;
             border-radius: 10px;
             text-decoration: none;
         }
 
         .btn:hover {
-            background-color: #4150d8;
+            background-color: #3457D5;
+        }
+
+        /* Right Content */
+        .content {
+            width: 68%;
+            padding: 20px;
+            font-size: 19px;
+            line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION BAR -->
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="academic.html">Academic</a>
@@ -98,18 +112,41 @@
 
 <div class="container">
 
-    <img src="profile.png" class="profile">
+    <!-- LEFT PROFILE -->
+    <div class="profile-box">
+        <img src="profile.png" alt="profile picture">
 
-    <h1>Hamed Mozaffari</h1>
+        <div class="name">Hamed Mozaffari</div>
 
-    <p class="bio">
-        Dual PhDs in Mech. Eng. (Control & Dynamics)<br>
-        Eng. Sc. (Robotics)<br>
-        Robotics | Estimation | Planning | AI
-    </p>
+        <div class="bio">
+            Dual PhDs in Mechanical Engineering (Control & Dynamics)  
+            and Engineering Science (Robotics).  
+            Robotics • Estimation • Motion Planning • AI
+        </div>
 
-    <a class="btn" href="cv_academic.pdf" download>Download Academic CV</a>
-    <a class="btn" href="cv_industry.pdf" download>Download Industry CV</a>
+        <a class="btn" href="cv_academic.pdf" download>Download Academic CV</a>
+        <a class="btn" href="cv_industry.pdf" download>Download Industry CV</a>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="content">
+        <h1>Welcome</h1>
+        <p>
+            I am a dual-background Ph.D. researcher in Robotics and Control Engineering with deep experience in 
+            state estimation, nonlinear control, AI-driven autonomy, multi-sensor fusion (LiDAR, IMU, Camera), 
+            and intelligent robotic systems.
+        </p>
+
+        <p>
+            My work spans both academia and industry, focusing on robust autonomous platforms, delay-compensated 
+            estimation frameworks (EKF/UKF/CKF), motion planning (MPC, TrajOpt, CHOMP), and embedded systems for real robots.
+        </p>
+
+        <p>
+            This website includes my research background, robotics projects, teaching experience, and downloadable 
+            academic & industry CVs.
+        </p>
+    </div>
 
 </div>
 
