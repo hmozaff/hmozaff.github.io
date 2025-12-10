@@ -13,7 +13,7 @@
     color: #222;
   }
 
-  /* NAVIGATION BAR */
+  /* NAVIGATION */
   .navbar {
     background: #111;
     width: 100%;
@@ -32,12 +32,9 @@
   }
   .navbar a:hover { color: white; }
 
-  /* Space below navbar */
-  .page-space {
-    height: 90px;
-  }
+  .page-space { height: 90px; }
 
-  /* MAIN CONTAINER */
+  /* PAGE LAYOUT */
   .container {
     max-width: 1200px;
     margin: auto;
@@ -61,28 +58,12 @@
     width: 65%;
   }
 
-  h1 {
-    font-size: 36px;
-    margin-bottom: 8px;
-  }
+  h1 { font-size: 36px; margin-bottom: 8px; }
+  h2 { font-size: 32px; margin-top: 35px; }
+  h3 { font-size: 26px; margin-top: 25px; }
+  p, li { font-size: 20px; line-height: 1.6; }
 
-  h2 {
-    font-size: 32px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-  }
-
-  h3 {
-    font-size: 26px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-  }
-
-  p, li {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-
+  /* BUTTON */
   .cv-btn {
     display: block;
     width: 80%;
@@ -119,7 +100,7 @@
 
 <div class="page-space"></div>
 
-<!-- MAIN PAGE -->
+<!-- MAIN LAYOUT -->
 <div class="container">
 
   <!-- LEFT SIDE -->
@@ -129,99 +110,76 @@
     <h1>Hamed Mozaffari</h1>
 
     <p style="font-size:18px;">
-      Robotics • Control • Estimation • Motion Planning • AI  
-      <br>Dual PhDs in Mech. Eng. (Control & Dynamics) & Eng. Science (Robotics)
+      Robotics • Controls • Estimation • Motion Planning • AI  
+      <br>Industry-Focused Engineering & Autonomous Systems
     </p>
 
     <a href="cv_industry.pdf" class="cv-btn">Download Industry CV</a>
-    <a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
   </div>
 
   <!-- RIGHT SIDE -->
   <div class="right">
 
-    <!-- PROFESSIONAL SUMMARY -->
-    <h2>Professional Summary</h2>
+    <!-- SUMMARY -->
+    <h2>Industry Summary</h2>
     <p>
-      Robotics and Control Engineer with strong experience in industrial and automotive systems, 
-      specializing in **state estimation, motion planning, reinforcement learning**, and 
-      **multi-sensor fusion** using LiDAR, IMU, cameras, and robotic manipulators.  
-      Proven ability to build reliable autonomous and human-interactive systems by integrating  
-      **AI-based decision making, embedded systems, and real-time control frameworks**.
+      Robotics and Control Engineer with extensive experience developing industrial and automotive 
+      autonomous systems. Expertise in **state estimation, motion planning, multi-sensor fusion**, 
+      and **AI-driven decision-making** using LiDAR, IMU, camera, and robotic manipulators.
     </p>
 
     <p>
-      My expertise spans robotics R&D labs, automotive engineering companies, and academic research groups. 
-      I develop algorithms that remain robust under noise, uncertainty, delays, and real-world constraints—  
-      enabling advanced autonomy in robots, vehicles, and intelligent systems.
+      Skilled in deploying real-time robotic platforms using **ROS2, C++, Python, STM32, embedded systems**,  
+      and optimization-based or learning-based control frameworks. My work emphasizes reliability, 
+      safety, and high-performance behavior under uncertainty, delays, and noise.
     </p>
 
-
-    <!-- CORE TECHNICAL FOCUS -->
-    <h2 class="section">Core Technical Focus</h2>
+    <!-- TECHNICAL FOCUS -->
+    <h2 class="section">Core Technical Expertise</h2>
     <ul>
-      <li><b>Robotics:</b> Motion planning, inverse kinematics, trajectory optimization, RL-based control</li>
-      <li><b>Estimation:</b> EKF, UKF, CKF, quaternion filters, delay compensation, multi-rate fusion</li>
-      <li><b>Autonomous Systems:</b> Behavior modeling, prediction, decision-making, SLAM</li>
-      <li><b>Controls:</b> MPC, LQR, SMC, torque control, adaptive control</li>
-      <li><b>Embedded Systems:</b> ROS2, Gazebo, MoveIt, C++, Python, STM32, Raspberry Pi</li>
-      <li><b>Simulation:</b> Git-based SIL/HIL pipelines, Simulink, ANSYS, multibody dynamics</li>
+      <li><b>Robotics:</b> Motion planning, trajectory optimization, RL-based control, IK</li>
+      <li><b>Estimation:</b> EKF, UKF, CKF, quaternion estimation, delay compensation</li>
+      <li><b>Autonomy:</b> Behavior modeling, prediction, decision-making, SLAM</li>
+      <li><b>Control:</b> MPC, LQR, SMC, torque control, adaptive control</li>
+      <li><b>Simulation:</b> SIL/HIL pipelines, multibody dynamics, ANSYS</li>
+      <li><b>Embedded:</b> ROS2, Gazebo, MoveIt, Python, C++, STM32, Raspberry Pi</li>
     </ul>
-
 
     <!-- INDUSTRY EXPERIENCE -->
     <h2 class="section">Industry Experience</h2>
 
-    <h3>Robotics Engineer – ADROCO Research Group (2023–2024)</h3>
+    <h3>Robotics Estimation Engineer – ADROCO (2023–2024)</h3>
     <ul>
-      <li>Developed a complete estimation package to handle delayed measurements and multi-rate sampling.</li>
-      <li>Designed fusion pipelines integrating LiDAR, IMU, camera, and proprioceptive sensors.</li>
-      <li>Built LSTM-based uncertainty modeling for adaptive covariance estimation.</li>
+      <li>Developed a full estimation system handling delayed measurements and multi-rate sampling.</li>
+      <li>Built LiDAR–IMU–Camera fusion pipelines with EKF/UKF/CKF frameworks.</li>
+      <li>Implemented LSTM-based covariance adaptation for uncertain dynamics.</li>
     </ul>
 
-    <h3>Motion Planning & RL Engineer – ADROCO (2022–2023)</h3>
+    <h3>Motion Planning & Reinforcement Learning – ADROCO (2022–2023)</h3>
     <ul>
-      <li>Developed MPC-based and RL-assisted planners for a 6-DOF Trossen robotic arm.</li>
-      <li>Achieved sub-millimeter IK accuracy using CNN-based learning models trained in simulation.</li>
+      <li>Designed MPC-based and RL-enhanced planning strategies for a 6-DOF manipulator.</li>
+      <li>Achieved sub-millimeter IK accuracy using CNN models trained in simulation.</li>
     </ul>
 
     <h3>Human–Vehicle Interaction Modeling – Nasir Tech Co. (2019–2022)</h3>
     <ul>
-      <li>Created psychologically grounded models of human drivers for near-crash scenarios.</li>
-      <li>Developed autonomous decision-making using Q-learning for dynamic driving tasks.</li>
-      <li>Achieved 91.8% correct action prediction in SIL evaluation.</li>
+      <li>Developed psychological driver models for near-crash prediction and reaction estimation.</li>
+      <li>Built Q-learning decision models achieving 91.8% correct action prediction.</li>
+      <li>Designed control-oriented driver-in-the-loop behavioral systems for automotive AV/ADAS.</li>
     </ul>
 
-    <h3>Vehicle Dynamics Simulation Engineer – Nasir Tech Co. (2014–2018)</h3>
+    <h3>Vehicle Dynamics & Simulation Engineer – Nasir Tech Co. (2014–2018)</h3>
     <ul>
-      <li>Implemented 6-DOF and 14-DOF vehicle models for simulators (C++/PhysX SDK).</li>
-      <li>Designed real-time haptic feedback systems for driver simulators.</li>
-      <li>Performed gearbox vibration, stress, and kinematic modeling for automotive platforms.</li>
+      <li>Implemented 6-DOF and 14-DOF vehicle models using C++ and NVIDIA PhysX.</li>
+      <li>Designed haptic torque-feedback systems for simulators.</li>
+      <li>Performed gearbox vibration & stress modeling for automotive platforms.</li>
     </ul>
-
-
-    <!-- FACULTY EXPERIENCE -->
-    <h2 class="section">Faculty & Academic Roles</h2>
-    <p>
-      Alongside industry roles, I serve as an **Independent Instructor** at Southern Illinois University Edwardsville (SIUE) 
-      and formerly at K. N. Toosi University of Technology. My teaching focuses on robotics, estimation, control, and 
-      mechatronics systems.
-    </p>
-
-    <ul>
-      <li>Sensors & Actuators — Instructor</li>
-      <li>Integrated Mechatronics (Raspberry Pi) — Instructor</li>
-      <li>Dynamic Systems Lab — Instructor</li>
-      <li>Automatic Control — TA / Instructor</li>
-      <li>Ground Vehicle Dynamics — TA</li>
-    </ul>
-
 
     <!-- AWARDS -->
-    <h2 class="section">Honors & Recognition</h2>
+    <h2 class="section">Industry Honors & Recognition</h2>
     <ul>
-      <li>Outstanding Graduate Student, Mechanical Engineering Department</li>
-      <li>Brilliant Talent Award (Top 1% Engineering Students)</li>
+      <li>Outstanding Graduate Engineer Award</li>
+      <li>Brilliant Talent Award – Top 1% Engineering Students</li>
     </ul>
 
   </div>
