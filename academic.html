@@ -1,82 +1,132 @@
-<div class="navbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic | Hamed Mozaffari</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #82caff;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+            background-color: white;
+            padding: 40px;
+        }
+
+        .left-box {
+            width: 35%;
+            float: left;
+            text-align: center;
+            padding-right: 50px;
+            border-right: 3px solid #ddd;
+        }
+
+        .left-box img {
+            width: 80%;
+            border-radius: 50%;
+        }
+
+        .right-box {
+            width: 60%;
+            float: right;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 40px;
+            color: #111;
+        }
+
+        ul {
+            font-size: 20px;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 14px 28px;
+            background-color: #4a6cf7;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            width: 70%;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #1f3fcf;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav>
     <a href="index.html">Home</a>
     <a href="academic.html">Academic</a>
     <a href="industry.html">Industry</a>
     <a href="teaching.html">Teaching</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-</div>
-
-<style>
-.navbar {
-    background-color: #111;
-    padding: 12px;
-    text-align: center;
-}
-.navbar a {
-    color: #66ccff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: white;
-}
-</style>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Academic Profile – Hamed Mozaffari</title>
-<style>
-    body { font-family: Arial; margin: 40px; background-color: #f5f5f5; }
-    .container { display: flex; max-width: 1100px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-    .left {
-        width: 280px; text-align: center; padding-right: 25px; border-right: 2px solid #ddd;
-    }
-    .left img {
-        width: 220px; height: 220px; object-fit: cover; border-radius: 50%; border: 3px solid #555;
-    }
-    .name { font-size: 22px; font-weight: bold; margin-top: 15px; }
-    .bio { font-size: 14px; color: #555; margin-top: 10px; }
-
-    .right { flex-grow: 1; padding-left: 30px; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-
-    .btn {
-        background: #007bff; color: white; padding: 10px 18px;
-        border-radius: 6px; text-decoration: none; font-weight: bold;
-    }
-</style>
-</head>
-
-<body>
+</nav>
 
 <div class="container">
 
-    <!-- LEFT PANEL (Photo + Info) -->
-    <div class="left">
+    <!-- LEFT SIDE -->
+    <div class="left-box">
         <img src="profile.png" alt="Profile Photo">
-        <div class="name">Hamed Mozaffari</div>
 
-        <div class="bio">
-            Dual PhDs in Mech. Eng. (Control & Dynamics) & Eng. Sc. (Robotics)  
-            Robotics | State Estimation | Motion Planning | Sensor Fusion | AV/ADAS | AI
-        </div>
+        <h2>Hamed Mozaffari</h2>
 
-        <br><br>
-        <a href="cv_academic.pdf" download class="btn">Download Academic CV</a>
+        <p style="font-size:20px;">
+            Dual PhDs in Mechanical Engineering (Control & Dynamics)  
+            & Engineering Science (Robotics)  
+            <br>Robotics • Estimation • Planning • Sensor Fusion • AV/ADAS • AI
+        </p>
+
+        <a href="cv_academic.pdf" class="btn" download>Download Academic CV</a>
     </div>
 
-    <!-- RIGHT PANEL -->
-    <div class="right">
+    <!-- RIGHT SIDE -->
+    <div class="right-box">
+        
         <h2>Academic Background</h2>
-        <p>
-            Researcher in autonomous systems, state estimation, and delay-compensated sensor fusion.
-            Extensive experience with EKF/UKF/CKF, nonlinear filtering, motion planning, and robotics algorithms.
+        <p style="font-size:22px; line-height:1.6;">
+            Researcher in autonomous systems, state estimation, and 
+            delay-compensated sensor fusion with EKF/UKF/CKF, nonlinear filtering, 
+            and robotics algorithms.
         </p>
 
         <h2>Research Interests</h2>
@@ -87,8 +137,34 @@
             <li>Time-Delay Systems & Delay Compensation</li>
             <li>AI and Reinforcement Learning for Robotics</li>
         </ul>
+
+        <h2>Teaching Experience (Summary)</h2>
+        <p style="font-size:22px; line-height:1.6;">
+            I have independently taught and redesigned multiple undergraduate courses 
+            at Southern Illinois University Edwardsville (SIUE), K. N. Toosi University 
+            of Technology, and Azad University (Hashtgerd Branch). My role includes 
+            developing lectures, assignments, laboratory modules, hands-on projects, 
+            and exams.
+        </p>
+
+        <p style="font-size:22px; line-height:1.6;">
+            My teaching areas include sensors and actuators, mechatronics with Raspberry Pi, 
+            dynamic systems labs, ground vehicle dynamics, automatic control, engineering 
+            programming, applied machine design, and finite-element methods using ANSYS.
+        </p>
+
+        <p style="font-size:22px; line-height:1.6;">
+            I received the Outstanding Instructor Award in 2014 and 2016 based on student evaluations.
+        </p>
+
     </div>
 
+    <div style="clear:both;"></div>
+
+</div>
+
+<div class="footer">
+    © 2025 Hamed Mozaffari — Robotics & Intelligent Systems
 </div>
 
 </body>
