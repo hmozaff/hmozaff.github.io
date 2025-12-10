@@ -1,95 +1,230 @@
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-<style>
-.navbar {
-    background-color: #111;
-    padding: 12px;
-    text-align: center;
-}
-.navbar a {
-    color: #66ccff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: white;
-}
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Industry Experience – Hamed Mozaffari</title>
+
 <style>
-    body { font-family: Arial; margin: 40px; background-color: #f8f8f8; }
-    .container { display: flex; max-width: 1100px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+  }
 
-    .left {
-        width: 280px; text-align: center; padding-right: 25px; border-right: 2px solid #ccc;
-    }
-    .left img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; }
+  /* NAVIGATION BAR */
+  .navbar {
+    background: #111;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #6ab7ff;
+    margin: 0 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .navbar a:hover { color: white; }
 
-    .name { font-size: 22px; font-weight: bold; margin-top: 15px; }
-    .bio { font-size: 14px; color: #555; margin-top: 10px; }
+  /* Space below navbar */
+  .page-space {
+    height: 90px;
+  }
 
-    .right { flex-grow: 1; padding-left: 30px; }
-    h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+  /* MAIN CONTAINER */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
 
-    .btn {
-        background: #007bff; color: white; padding: 10px 18px;
-        border-radius: 6px; text-decoration: none; font-weight: bold;
-    }
+  .left {
+    width: 35%;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 50%;
+  }
+
+  .right {
+    width: 65%;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 26px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  p, li {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .cv-btn {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #5c79ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .cv-btn:hover { background-color: #3a53cc; }
+
+  .section {
+    margin-top: 45px;
+    border-top: 2px solid #ddd;
+    padding-top: 20px;
+  }
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="industry.html">Industry</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="page-space"></div>
+
+<!-- MAIN PAGE -->
 <div class="container">
 
-    <!-- LEFT PANEL (Photo + Info) -->
-    <div class="left">
-        <img src="profile.png" alt="Profile Photo">
-        <div class="name">Hamed Mozaffari</div>
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="profile.png" class="profile-img" alt="Hamed Mozaffari">
 
-        <div class="bio">
-            Dual PhDs in Mech. Eng. (Control & Dynamics) & Eng. Sc. (Robotics)  
-            Robotics | Estimation | Planning | Sensor Fusion | AV/ADAS | AI
-        </div>
+    <h1>Hamed Mozaffari</h1>
 
-        <br><br>
-        <a href="cv_industry.pdf" download class="btn">Download Industry CV</a>
-    </div>
+    <p style="font-size:18px;">
+      Robotics • Control • Estimation • Motion Planning • AI  
+      <br>Dual PhDs in Mech. Eng. (Control & Dynamics) & Eng. Science (Robotics)
+    </p>
 
-    <!-- RIGHT PANEL -->
-    <div class="right">
-        <h2>Industry Experience</h2>
-        <p>
-            Experienced in developing robust autonomous systems using advanced estimation, control,
-            multi-sensor fusion, and motion planning for real-world applications.
-        </p>
+    <a href="cv_industry.pdf" class="cv-btn">Download Industry CV</a>
+    <a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
+  </div>
 
-        <h2>Technical Focus</h2>
-        <ul>
-            <li>AV/ADAS Sensor Fusion (LiDAR + IMU + Camera)</li>
-            <li>EKF/UKF/CKF pipelines with delay compensation</li>
-            <li>MPC-based motion planning for safe navigation</li>
-            <li>Trajectory optimization (CHOMP, TrajOpt)</li>
-            <li>Robotics frameworks: ROS2, Nav2, MoveIt, Isaac</li>
-            <li>Modern C++ (17/20), Python, MATLAB</li>
-        </ul>
-    </div>
+  <!-- RIGHT SIDE -->
+  <div class="right">
 
+    <!-- PROFESSIONAL SUMMARY -->
+    <h2>Professional Summary</h2>
+    <p>
+      Robotics and Control Engineer with strong experience in industrial and automotive systems, 
+      specializing in **state estimation, motion planning, reinforcement learning**, and 
+      **multi-sensor fusion** using LiDAR, IMU, cameras, and robotic manipulators.  
+      Proven ability to build reliable autonomous and human-interactive systems by integrating  
+      **AI-based decision making, embedded systems, and real-time control frameworks**.
+    </p>
+
+    <p>
+      My expertise spans robotics R&D labs, automotive engineering companies, and academic research groups. 
+      I develop algorithms that remain robust under noise, uncertainty, delays, and real-world constraints—  
+      enabling advanced autonomy in robots, vehicles, and intelligent systems.
+    </p>
+
+
+    <!-- CORE TECHNICAL FOCUS -->
+    <h2 class="section">Core Technical Focus</h2>
+    <ul>
+      <li><b>Robotics:</b> Motion planning, inverse kinematics, trajectory optimization, RL-based control</li>
+      <li><b>Estimation:</b> EKF, UKF, CKF, quaternion filters, delay compensation, multi-rate fusion</li>
+      <li><b>Autonomous Systems:</b> Behavior modeling, prediction, decision-making, SLAM</li>
+      <li><b>Controls:</b> MPC, LQR, SMC, torque control, adaptive control</li>
+      <li><b>Embedded Systems:</b> ROS2, Gazebo, MoveIt, C++, Python, STM32, Raspberry Pi</li>
+      <li><b>Simulation:</b> Git-based SIL/HIL pipelines, Simulink, ANSYS, multibody dynamics</li>
+    </ul>
+
+
+    <!-- INDUSTRY EXPERIENCE -->
+    <h2 class="section">Industry Experience</h2>
+
+    <h3>Robotics Engineer – ADROCO Research Group (2023–2024)</h3>
+    <ul>
+      <li>Developed a complete estimation package to handle delayed measurements and multi-rate sampling.</li>
+      <li>Designed fusion pipelines integrating LiDAR, IMU, camera, and proprioceptive sensors.</li>
+      <li>Built LSTM-based uncertainty modeling for adaptive covariance estimation.</li>
+    </ul>
+
+    <h3>Motion Planning & RL Engineer – ADROCO (2022–2023)</h3>
+    <ul>
+      <li>Developed MPC-based and RL-assisted planners for a 6-DOF Trossen robotic arm.</li>
+      <li>Achieved sub-millimeter IK accuracy using CNN-based learning models trained in simulation.</li>
+    </ul>
+
+    <h3>Human–Vehicle Interaction Modeling – Nasir Tech Co. (2019–2022)</h3>
+    <ul>
+      <li>Created psychologically grounded models of human drivers for near-crash scenarios.</li>
+      <li>Developed autonomous decision-making using Q-learning for dynamic driving tasks.</li>
+      <li>Achieved 91.8% correct action prediction in SIL evaluation.</li>
+    </ul>
+
+    <h3>Vehicle Dynamics Simulation Engineer – Nasir Tech Co. (2014–2018)</h3>
+    <ul>
+      <li>Implemented 6-DOF and 14-DOF vehicle models for simulators (C++/PhysX SDK).</li>
+      <li>Designed real-time haptic feedback systems for driver simulators.</li>
+      <li>Performed gearbox vibration, stress, and kinematic modeling for automotive platforms.</li>
+    </ul>
+
+
+    <!-- FACULTY EXPERIENCE -->
+    <h2 class="section">Faculty & Academic Roles</h2>
+    <p>
+      Alongside industry roles, I serve as an **Independent Instructor** at Southern Illinois University Edwardsville (SIUE) 
+      and formerly at K. N. Toosi University of Technology. My teaching focuses on robotics, estimation, control, and 
+      mechatronics systems.
+    </p>
+
+    <ul>
+      <li>Sensors & Actuators — Instructor</li>
+      <li>Integrated Mechatronics (Raspberry Pi) — Instructor</li>
+      <li>Dynamic Systems Lab — Instructor</li>
+      <li>Automatic Control — TA / Instructor</li>
+      <li>Ground Vehicle Dynamics — TA</li>
+    </ul>
+
+
+    <!-- AWARDS -->
+    <h2 class="section">Honors & Recognition</h2>
+    <ul>
+      <li>Outstanding Graduate Student, Mechanical Engineering Department</li>
+      <li>Brilliant Talent Award (Top 1% Engineering Students)</li>
+    </ul>
+
+  </div>
 </div>
 
 </body>
