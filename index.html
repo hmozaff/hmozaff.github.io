@@ -29,143 +29,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamed Mozaffari – Home</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-        }
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
 
-        /* Navbar */
-        .navbar {
-            background-color: #111;
-            padding: 12px;
-            text-align: center;
-        }
+    /* NAVIGATION BAR */
+    nav {
+        background-color: #111;
+        padding: 15px;
+        text-align: center;
+    }
+    nav a {
+        color: #66ccff;
+        margin: 0 18px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav a:hover { color: white; }
 
-        .navbar a {
-            color: #66ccff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 19px;
-            font-weight: bold;
-        }
+    /* LAYOUT */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+    }
 
-        .navbar a:hover {
-            color: #fff;
-        }
+    .left {
+        width: 35%;
+        text-align: center;
+    }
 
-        /* Container split layout */
-        .container {
-            display: flex;
-            max-width: 1100px;
-            margin: 20px auto;
-            padding: 20px;
-        }
+    .left img {
+        width: 80%;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
 
-        /* Left Profile Panel */
-        .profile-box {
-            width: 32%;
-            text-align: center;
-            padding: 20px;
-            border-right: 2px solid #ddd;
-        }
+    .name {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-        .profile-box img {
-            width: 85%;
-            border-radius: 50%;
-        }
+    .bio {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
 
-        .name {
-            font-size: 32px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
+    .btn {
+        display: block;
+        width: 80%;
+        padding: 14px;
+        margin: 10px auto;
+        background-color: #4A76FF;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .btn:hover {
+        background-color: #365ad9;
+    }
 
-        .bio {
-            margin-top: 10px;
-            font-size: 17px;
-            line-height: 1.5;
-        }
+    .right {
+        width: 65%;
+        font-size: 20px;
+        line-height: 1.7;
+    }
 
-        .btn {
-            display: block;
-            width: 90%;
-            padding: 12px;
-            margin: 15px auto;
-            background-color: #4A76FF;
-            color: white;
-            font-size: 18px;
-            border-radius: 10px;
-            text-decoration: none;
-        }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
 
-        .btn:hover {
-            background-color: #3457D5;
-        }
-
-        /* Right Content */
-        .content {
-            width: 68%;
-            padding: 20px;
-            font-size: 19px;
-            line-height: 1.6;
-        }
-    </style>
+</style>
 </head>
+
 
 <body>
 
-<div class="navbar">
+<!-- SINGLE NAVBAR (FIXED) -->
+<nav>
     <a href="index.html">Home</a>
     <a href="academic.html">Academic</a>
     <a href="industry.html">Industry</a>
     <a href="teaching.html">Teaching</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
-</div>
+</nav>
 
+
+<!-- MAIN CONTENT -->
 <div class="container">
 
-    <!-- LEFT PROFILE -->
-    <div class="profile-box">
-        <img src="profile.png" alt="profile picture">
-
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="profile.png" alt="Profile Photo">
         <div class="name">Hamed Mozaffari</div>
-
         <div class="bio">
             Dual PhDs in Mechanical Engineering (Control & Dynamics)  
             and Engineering Science (Robotics).  
-            Robotics • Estimation • Motion Planning • AI
+            Robotics • Estimation • Planning • AI
         </div>
 
         <a class="btn" href="cv_academic.pdf" download>Download Academic CV</a>
         <a class="btn" href="cv_industry.pdf" download>Download Industry CV</a>
     </div>
 
-    <!-- RIGHT CONTENT -->
-    <div class="content">
-        <h1>Welcome</h1>
-        <p>
-            I am a dual-background Ph.D. researcher in Robotics and Control Engineering with deep experience in 
-            state estimation, nonlinear control, AI-driven autonomy, multi-sensor fusion (LiDAR, IMU, Camera), 
-            and intelligent robotic systems.
-        </p>
+    <!-- RIGHT SIDE -->
+    <div class="right">
+        <h2>Welcome</h2>
 
-        <p>
-            My work spans both academia and industry, focusing on robust autonomous platforms, delay-compensated 
-            estimation frameworks (EKF/UKF/CKF), motion planning (MPC, TrajOpt, CHOMP), and embedded systems for real robots.
-        </p>
-
-        <p>
-            This website includes my research background, robotics projects, teaching experience, and downloadable 
-            academic & industry CVs.
-        </p>
+        I am a dual-background Ph.D. researcher in Robotics and Control Engineering 
+        with deep experience in state estimation, nonlinear control, AI-driven autonomy, 
+        multi-sensor fusion (LiDAR, IMU, Camera), and intelligent robotic systems.
+        <br><br>
+        My work spans both academia and industry, focusing on robust autonomous platforms, 
+        delay-compensated estimation frameworks (EKF/UKF/CKF), motion planning (MPC, TrajOpt, CHOMP), 
+        and embedded systems for real robots.
+        <br><br>
+        This website includes my research background, robotics projects, teaching experience, 
+        and downloadable academic & industry CVs.
     </div>
 
 </div>
