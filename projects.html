@@ -1,159 +1,158 @@
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-<style>
-.navbar {
-    background-color: #111;
-    padding: 12px;
-    text-align: center;
-}
-.navbar a {
-    color: #66ccff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-}
-.navbar a:hover {
-    color: white;
-}
-</style>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects – Hamed Mozaffari</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects – Hamed Mozaffari</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-        }
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+  }
 
-        .navbar {
-            background-color: #111;
-            padding: 12px;
-            text-align: center;
-        }
+  /* NAVBAR */
+  .navbar {
+    background: #111;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .navbar a {
+    color: #6ab7ff;
+    margin: 0 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: white;
+  }
 
-        .navbar a {
-            color: #66ccff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 19px;
-            font-weight: bold;
-        }
+  .page-space {
+    height: 90px;
+  }
 
-        .navbar a:hover {
-            color: #fff;
-        }
+  /* LAYOUT */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
 
-        .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 20px;
-        }
+  .left {
+    width: 35%;
+    text-align: center;
+  }
 
-        h1 {
-            font-size: 34px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+  .profile-img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 50%;
+  }
 
-        .project-box {
-            background-color: #f5f7fa;
-            border-left: 4px solid #4A76FF;
-            border-radius: 8px;
-            padding: 18px;
-            margin-bottom: 20px;
-        }
+  .title-line {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-        .project-title {
-            font-size: 22px;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
+  .right {
+    width: 65%;
+  }
 
-        .project-desc {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-    </style>
+  h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  /* PROJECT CARDS */
+  .project-card {
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 6px solid #6ab7ff;
+  }
+
+  .project-card h3 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+  }
+
+  .project-card p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+  }
+</style>
 </head>
 
 <body>
 
-<div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="academic.html">Academic</a>
-    <a href="industry.html">Industry</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-</div>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="academic.html">Academic</a>
+  <a href="industry.html">Industry</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
+<div class="page-space"></div>
 
 <div class="container">
 
-    <h1>Selected Projects</h1>
+  <!-- LEFT SIDE WITH PHOTO -->
+  <div class="left">
+    <img src="profile.png" class="profile-img" alt="Hamed Mozaffari">
 
-    <!-- Project 1 -->
-    <div class="project-box">
-        <div class="project-title">Delay-Compensated EKF/UKF/CKF Framework</div>
-        <div class="project-desc">
-            Developed a unified estimation architecture that compensates for time-varying sensor delays in
-            LiDAR, IMU, and camera measurements. Achieves increased robustness in autonomous navigation
-            under real-world latency conditions.
-        </div>
+    <p class="title-line">
+      Dual PhDs in Mechanical Engineering (Control & Dynamics) & Engineering Science (Robotics) <br>
+      Robotics • State Estimation • Motion Planning • Sensor Fusion • AV/ADAS • AI
+    </p>
+  </div>
+
+  <!-- RIGHT SIDE: PROJECTS -->
+  <div class="right">
+
+    <h2>Selected Projects</h2>
+
+    <div class="project-card">
+      <h3>Delay-Compensated EKF/UKF/CKF Framework</h3>
+      <p>Unified estimation architecture compensating for time-varying sensor delays in LiDAR, IMU, and camera data.</p>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-box">
-        <div class="project-title">Autonomous Motion Planning using MPC + Reinforcement Learning</div>
-        <div class="project-desc">
-            Designed a hybrid MPC–RL framework for safe and adaptive navigation in dynamic environments.
-            Integrated into ROS2-based platforms for real-time demonstration.
-        </div>
+    <div class="project-card">
+      <h3>Autonomous Motion Planning using MPC + Reinforcement Learning</h3>
+      <p>Hybrid MPC–RL framework for safe navigation in dynamic environments; deployed on ROS2 platforms.</p>
     </div>
 
-    <!-- Project 3 -->
-    <div class="project-box">
-        <div class="project-title">6-DOF Robotic Manipulator Control & Estimation</div>
-        <div class="project-desc">
-            Developed state estimation algorithms and trajectory optimization for a 6-DOF robotic arm using
-            Python, C++, ROS2, and real sensor data. Included quaternion-based EKF for orientation tracking.
-        </div>
+    <div class="project-card">
+      <h3>6-DOF Robotic Manipulator Control & Estimation</h3>
+      <p>Trajectory optimization and quaternion-based EKF for robotic arm orientation and motion control.</p>
     </div>
 
-    <!-- Project 4 -->
-    <div class="project-box">
-        <div class="project-title">LiDAR–IMU–Camera Multi-Sensor Fusion Module</div>
-        <div class="project-desc">
-            Built a modular perception framework supporting LiDAR feature extraction, IMU integration,
-            camera-based semantic cues, and unified probabilistic fusion.
-        </div>
+    <div class="project-card">
+      <h3>LiDAR–IMU–Camera Multi-Sensor Fusion Module</h3>
+      <p>Modular perception framework combining LiDAR features, IMU integration, and camera semantic cues.</p>
     </div>
 
-    <!-- Project 5 -->
-    <div class="project-box">
-        <div class="project-title">Real-Time Autonomous Navigation Platform</div>
-        <div class="project-desc">
-            Integrated ROS2, nav2, MoveIt, and embedded control systems to develop a fully autonomous
-            mobile robot capable of mapping, localization, and obstacle avoidance.
-        </div>
+    <div class="project-card">
+      <h3>Real-Time Autonomous Navigation Platform</h3>
+      <p>Implemented ROS2, Nav2, MoveIt, and embedded systems for mapping, localization, and obstacle avoidance.</p>
     </div>
 
+  </div>
 </div>
 
 </body>
