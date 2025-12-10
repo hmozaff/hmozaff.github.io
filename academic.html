@@ -39,54 +39,86 @@
     height: 90px;
   }
 
-  /* MAIN CONTENT */
+  /* MAIN CONTAINER (Two Columns) */
   .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    gap: 40px;
     padding: 20px;
-    line-height: 1.7;
-    font-size: 20px;
+  }
+
+  /* LEFT SIDE */
+  .left {
+    width: 35%;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 50%;
+  }
+
+  h1, h2 {
+    font-weight: bold;
   }
 
   h1 {
-    font-size: 38px;
-    text-align: center;
-    margin-bottom: 35px;
+    font-size: 36px;
+    margin-top: 15px;
   }
 
   h2 {
-    font-size: 30px;
-    margin-top: 35px;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 12px;
   }
 
-  ul {
-    font-size: 20px;
+  .left p {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.5;
   }
 
   .cv-btn {
     display: block;
-    width: 260px;
+    width: 80%;
+    margin: 15px auto;
     padding: 15px;
-    margin: 25px auto;
+    font-size: 20px;
     background-color: #5c79ff;
+    color: white;
+    text-decoration: none;
     border-radius: 8px;
     text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
   }
   .cv-btn:hover {
     background-color: #3a53cc;
+  }
+
+  /* RIGHT SIDE */
+  .right {
+    width: 65%;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .right ul {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- NAVIGATION BAR -->
 <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="academic.html">Academic</a>
@@ -98,105 +130,90 @@
 
 <div class="page-space"></div>
 
+<!-- MAIN CONTENT -->
 <div class="container">
 
-<h1>Academic Profile</h1>
+  <!-- LEFT SIDE (Photo + Summary) -->
+  <div class="left">
+    <img src="profile.png" class="profile-img" alt="Hamed Mozaffari">
 
-<!-- Academic Background -->
-<h2>Academic Background</h2>
-<p>
-I am a dual-background Ph.D. researcher in <strong>Robotics, Control Systems, and Autonomous Intelligence</strong>,  
-with specialization in nonlinear estimation, multi-sensor fusion, motion planning,  
-and delay-compensated filtering frameworks (EKF/UKF/CKF).  
-My research aims to develop mathematically rigorous and computationally efficient algorithms  
-for real-world autonomous robotic systems.
-</p>
+    <h1>Hamed Mozaffari</h1>
 
-<!-- Research Interests -->
-<h2>Research Interests</h2>
-<ul>
-  <li>State Estimation & Nonlinear Filtering (EKF, UKF, CKF)</li>
-  <li>Sensor Fusion using LiDAR, IMU, Camera, and Multi-modal Systems</li>
-  <li>Time-Delay Systems & Delay Compensation in Robotics</li>
-  <li>Autonomous Robotics • Motion Planning • Optimal Control</li>
-  <li>AI & Learning-Based Control for Autonomous Systems</li>
-</ul>
+    <p>
+      Dual PhDs in Mechanical Engineering (Control & Dynamics)  
+      and Engineering Science (Robotics).  
+      <br>Robotics • Estimation • Sensor Fusion • Motion Planning • AI
+    </p>
 
-<!-- Expanded Research Statement -->
-<h2>Expanded Research Profile</h2>
-<p>
-My research integrates theoretical control and estimation with practical autonomous systems.  
-I focus on designing algorithms that remain robust despite sensor noise, delay, environmental uncertainty,  
-and real-time computational constraints.  
-Examples of my recent work include:
-</p>
+    <a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
+  </div>
 
-<ul>
-  <li>
-    Developing <strong>augmented measurement–lead models</strong>  
-    to eliminate state-growth in delay systems, enabling efficient application of EKF/UKF/CKF.
-  </li>
+  <!-- RIGHT SIDE (Academic Content) -->
+  <div class="right">
 
-  <li>
-    Designing <strong>multi-sensor fusion pipelines</strong> combining LiDAR, IMU, and vision systems  
-    for high-accuracy robotics localization.
-  </li>
+    <h2>Academic Background</h2>
+    <hr>
+    <p>
+      I am a dual-background Ph.D. researcher in <strong>Robotics, Control Systems, and Autonomous Intelligence</strong>, 
+      specializing in nonlinear estimation, multi-sensor fusion, motion planning, and delay-compensated filtering 
+      frameworks (EKF/UKF/CKF). My research focuses on mathematically rigorous and computationally efficient 
+      algorithms for real-world autonomous robotic systems.
+    </p>
 
-  <li>
-    Creating <strong>robust motion planning frameworks</strong> using MPC, CHOMP, and TrajOpt  
-    for safe navigation in uncertain environments.
-  </li>
+    <h2>Research Interests</h2>
+    <hr>
+    <ul>
+      <li>State Estimation & Nonlinear Filtering (EKF, UKF, CKF)</li>
+      <li>Sensor Fusion using LiDAR, IMU, and Camera pipelines</li>
+      <li>Time-Delay Systems & Delay Compensation</li>
+      <li>Autonomous Robotics • Motion Planning • Optimal Control</li>
+      <li>AI & Learning-Based Control for Robotics</li>
+    </ul>
 
-  <li>
-    Investigating <strong>learning-enabled control</strong> for autonomous ground vehicles  
-    integrating behavior prediction and adaptive control.
-  </li>
-</ul>
+    <h2>Expanded Research Profile</h2>
+    <hr>
+    <p>
+      My research integrates theoretical control and estimation with real-world robotics.  
+      I develop algorithms that remain robust despite noise, delay, environmental uncertainty,  
+      and real-time constraints. Recent work includes:
+    </p>
 
-<p>
-My long-term research vision is to develop perception–estimation–planning algorithms  
-that unify mathematical rigor with industrial deployability,  
-bridging the gap between academic theory and practical robotics applications.
-</p>
+    <ul>
+      <li>
+        Developing <strong>augmented measurement–lead models</strong> that remove state-growth in delayed systems, 
+        enabling efficient EKF/UKF/CKF estimation.
+      </li>
+      <li>
+        Designing <strong>multi-sensor fusion systems</strong> combining LiDAR, IMU, and visual data for 
+        accurate localization and mapping.
+      </li>
+      <li>
+        Creating <strong>motion planning frameworks</strong> (MPC, CHOMP, TrajOpt) for safe robot navigation.
+      </li>
+      <li>
+        Researching <strong>learning-based planning and control</strong> for autonomous ground vehicles.
+      </li>
+    </ul>
 
-<!-- Publications -->
-<h2>Selected Publications</h2>
+    <h2>Selected Publications</h2>
+    <hr>
+    <ul>
+      <li><strong>H. Mozaffari</strong>, A. Dabiri, K. Gu — <em>Bayesian Investigation on Nonlinear Estimation with Delayed Measurement</em>, 2025.</li>
+      <li><strong>H. Mozaffari</strong>, A. Nahvi — <em>Motivational Driver Steering Model</em>, ASME/IEEE.</li>
+      <li><strong>H. Mozaffari</strong>, A. Nahvi — <em>Human Driver Model for Rear-End Collision Avoidance</em>.</li>
+    </ul>
 
-<ul>
-  <li>
-    <strong>H. Mozaffari</strong>, A. Dabiri, K. Gu,  
-    <em>“Bayesian Investigation on the Nonlinear Estimation Problem with Delayed Measurement.”</em>  
-    (2025) — Under Review.
-  </li>
+    <h2>Research Tools & Skills</h2>
+    <hr>
+    <ul>
+      <li>MATLAB, Simulink, Python, ROS2</li>
+      <li>C++ (Modern), CMake, Eigen</li>
+      <li>LiDAR/IMU/Camera Fusion Pipelines</li>
+      <li>Trajectory Optimization: MPC, CHOMP, TrajOpt</li>
+      <li>Nonlinear & Optimal Control Design</li>
+    </ul>
 
-  <li>
-    <strong>H. Mozaffari</strong>, A. Nahvi,  
-    <em>“A Motivational Driver Steering Model: Task Difficulty Homeostasis.”</em>  
-    ASME / IEEE Conferences.
-  </li>
-
-  <li>
-    <strong>H. Mozaffari</strong>, A. Nahvi,  
-    <em>“Human Driver Model for Rear-End Collision Avoidance.”</em>  
-    Journal of Dynamic Systems & Control.
-  </li>
-
-  <li>Additional publications available upon request.</li>
-</ul>
-
-<!-- Research Skills -->
-<h2>Research Tools & Technical Expertise</h2>
-<ul>
-  <li>MATLAB, Simulink, ROS2, Python</li>
-  <li>Sensor Fusion: LiDAR, IMU, Camera pipelines</li>
-  <li>Trajectory Optimization: MPC, CHOMP, TrajOpt</li>
-  <li>State Estimation: EKF / UKF / CKF / MEKF</li>
-  <li>Control Design: Nonlinear, Optimal, Robust</li>
-  <li>C++, Modern CMake, Eigen</li>
-</ul>
-
-<!-- CV Button -->
-<a href="cv_academic.pdf" class="cv-btn">Download Academic CV</a>
+  </div>
 
 </div>
 
